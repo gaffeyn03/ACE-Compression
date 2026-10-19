@@ -1,6 +1,6 @@
 {
   "artifact": "ACE-Compression anonymous-aligned public evaluation release",
-  "prepared_at_utc": "2026-10-19T03:27:30.095003+00:00",
+  "prepared_at_utc": "2026-10-19T03:39:09.023117+00:00",
   "anonymous_snapshot_sha256": "e56949943d148aa48768dcd803611cf20b19a281e01118a64499710da6212eb0",
   "verification": {
     "original_anonymous_files_present": 15765,
@@ -39,8 +39,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7554,
-      "sha256": "9df3395e69fa5dc88167e239dba6ddcfabb08bdef2e0793b6f26743fd8a8b201"
+      "bytes": 5629,
+      "sha256": "eae1d6f036dcc78092b924bf95eb86ab2e8d0069bdd824c6afe48fde3fffba93"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -78886,6 +78886,15 @@
       "path": "tests/test_release.py",
       "bytes": 7949,
       "sha256": "e5ca1b179fd41a69d429291437eb3f1a8e9220de2883ab558117d1f7eebbe05a"
+    },
+    {
+      "path": "README_zh-CN.md",
+      "bytes": 5239,
+      "sha256": "6c26b74048552ce47d780a81c0070437609e97d611ee14396e2ed06a7050b782"
     }
+  ],
+  "documentation_languages": [
+    "en",
+    "zh-CN"
   ]
 }
