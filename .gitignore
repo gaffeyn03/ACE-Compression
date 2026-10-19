@@ -1,53 +1,71 @@
-# Credentials, local environments and machine configuration
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Test / cache data (lm-evaluation-harness test fixtures, not part of paper)
+*.pkl
+.mypy_cache/
+.pytest_cache/
+
+# Logs and temp
+*.log
+*.tmp
+*.zip
+
+# Raw results (not included in artifact)
+results/raw/**/cache/
+results/raw/**/.cache/
+
+# Git
+.git/
+
+# Credentials and private working files
 .env
 .env.*
 !.env.example
 *.pem
 *.key
-.venv*/
-__pycache__/
-*.py[cod]
-.pytest_cache/
-.DS_Store
-.idea/
-.vscode/
-.codex/
-.claude/
 .ssh/
 .aws/
+.codex/
+.claude/
 auth.json
 credentials.json
 
-# Weights, datasets, caches and generated outputs
-models/
-checkpoints/
-cache/
-.cache/
+# Anchor weights at the project root: lm_eval/models and tests/models are CODE.
+/models/
+/checkpoints/
+/cache/
 *.safetensors
 *.bin
 *.pt
 *.pth
 *.ckpt
-*.pkl
-*.pickle
-*.npy
-*.npz
-*.log
 /experiments/
 /analysis/
 /rebuttal/
-results/generated/
-report/
-report_summary/
+/results/generated/
+/report/
+/report_summary/
 paper_benchmarks/**/results/
-paper_benchmarks/**/result/
+paper_benchmarks/**/results_en/
 paper_benchmarks/**/output/
 paper_benchmarks/**/outputs/
 paper_benchmarks/**/logs/
-paper_benchmarks/**/data/
+paper_benchmarks/**/data/*
+!paper_benchmarks/08_eq-bench/data/*.py
 paper_benchmarks/06_roleeval/upstream/
 paper_benchmarks/09_CharacterEval/BaichuanCharRM/
 paper_benchmarks/10_PsychoBench/questionnaires.json
-*.zip
-*.tar
-*.tar.gz

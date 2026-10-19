@@ -5,4 +5,5 @@ These scripts validate and summarize the processed benchmark result files includ
 | Script | Purpose |
 | --- | --- |
 | `check_processed_results.py` | Checks that all expected processed CSV files exist, prints row/column counts, and verifies obvious key columns without modifying data. |
-| `validate_release.py` | Checks original-release row counts, table shapes, model names, release scope and SHA-256 manifest. Use `--skip-manifest` after intentional edits. |
+| `check_source_layout.py` | Checks required source backends, lazy model mappings, benchmark/helper paths and original PsychoBench token settings without importing GPU libraries. |
+| `validate_release.py` | Checks original CSV hashes, table structure, source layout and packaging manifest. Use `--skip-manifest` after intentional source edits. |

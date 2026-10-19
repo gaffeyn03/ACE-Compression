@@ -1,6 +1,6 @@
 # Report Sync Utilities
 
-These scripts aggregate raw benchmark outputs into summary CSVs in `results/generated/`, leaving distributed tables in `results/processed/` unchanged. They document the original aggregation workflow and require matching raw outputs and metadata.
+These scripts document the original raw-report aggregation workflow. New consolidated summaries are written to `results/generated/`, leaving the original CSVs in `results/processed/` unchanged. Matching raw outputs and official metadata are required; source release files alone cannot recreate generated responses.
 
 These scripts parse the specific output format of each benchmark's raw result files and may require adaptation for different benchmark versions or output formats.
 

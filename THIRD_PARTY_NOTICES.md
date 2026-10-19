@@ -8,7 +8,7 @@ This repository includes upstream and adapted research source. The root MIT lice
 | HumanEval | https://github.com/openai/human-eval | `paper_benchmarks/03_human-eval/LICENSE` |
 | ToMBench | https://github.com/zhchen18/ToMBench | `paper_benchmarks/07_ToM-Bench/LICENSE` |
 | EQ-Bench | https://github.com/EQ-bench/EQ-Bench | `paper_benchmarks/08_eq-bench/LICENSE` |
-| CharacterEval | https://github.com/morecry/CharacterEval | `paper_benchmarks/09_CharacterEval/LICENSE` and `upstream_official/LICENSE` |
+| CharacterEval | https://github.com/morecry/CharacterEval | `paper_benchmarks/09_CharacterEval/LICENSE` |
 | PsychoBench | https://github.com/CUHK-ARISE/PsychoBench | `paper_benchmarks/10_PsychoBench/LICENSE` (GPL-3.0) |
 | TransformerCompression / SliceGPT | Source and attribution in the included upstream README | `compression/pruning_scripts/TransformerCompression/LICENSE` |
 

@@ -7,10 +7,10 @@ from pathlib import Path
 import sys
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
+ROOT = Path(__file__).resolve().parents[2]
 CHAR_ROOT = ROOT / "paper_benchmarks" / "09_CharacterEval"
 REPORT_ROOT = ROOT / "report"
-REPORT_SUMMARY_ROOT = ROOT / "results/generated"
+REPORT_SUMMARY_ROOT = ROOT / "results" / "generated"
 if str(CHAR_ROOT) not in sys.path:
     sys.path.insert(0, str(CHAR_ROOT))
 

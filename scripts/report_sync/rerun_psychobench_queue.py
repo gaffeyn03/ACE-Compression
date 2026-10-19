@@ -19,9 +19,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
-PB_ROOT = ROOT / "paper_benchmarks" / "10_PsychoBench" / "benchmark"
-RERUN_CSV = ROOT / "results/generated" / "Psychobench_needs_rerun.csv"
+ROOT = Path(__file__).resolve().parents[2]
+PB_ROOT = ROOT / "paper_benchmarks" / "10_PsychoBench"
+RERUN_CSV = ROOT / "results" / "generated" / "Psychobench_needs_rerun.csv"
 LOCAL_NO_PROXY = "127.0.0.1,localhost"
 QUESTIONNAIRE_ORDER = [
     "BFI",
@@ -938,8 +938,8 @@ def run_postprocess(run_root: Path, print_lock: threading.Lock) -> None:
         ["python3", "paper_benchmarks/10_PsychoBench/qwen2.5-32b/extract_results.py"],
         ["python3", "paper_benchmarks/10_PsychoBench/llama3.1-8b/extract_results.py"],
         ["python3", "paper_benchmarks/10_PsychoBench/deepseek-v2-lite-16b/extract_results.py"],
-        ["python3", "scripts/sync_psychobench_reports.py"],
-        ["python3", "scripts/validate_psychobench_summary.py"],
+        ["python3", "scripts/report_sync/sync_psychobench_reports.py"],
+        ["python3", "scripts/report_sync/validate_psychobench_summary.py"],
     ]
     for index, cmd in enumerate(commands, start=1):
         log_path = run_root / f"postprocess_{index}.log"

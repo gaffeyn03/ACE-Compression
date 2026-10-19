@@ -8,10 +8,10 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
+ROOT = Path(__file__).resolve().parents[2]
 PSYCHO_ROOT = ROOT / "paper_benchmarks" / "10_PsychoBench"
 REPORT_ROOT = ROOT / "report"
-REPORT_SUMMARY_ROOT = ROOT / "results/generated"
+REPORT_SUMMARY_ROOT = ROOT / "results" / "generated"
 
 
 QUESTIONNAIRE_ORDER: dict[str, list[str]] = {

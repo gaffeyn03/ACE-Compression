@@ -21,7 +21,7 @@ Benchmarks are grouped into a single folder and ordered according to the paper's
 
 ## Folder Convention
 
-Benchmark source and model-specific scripts are located directly in each numbered directory or its model subdirectories. Some benchmarks have `lm_eval_tasks/` custom definitions. Use paths in the included tree rather than adding legacy `benchmark/` or `launchers/` path components.
+Source and model-specific scripts are located directly in each numbered directory or its model subdirectories. Some benchmarks also have `lm_eval_tasks/`. Use paths in the included tree rather than adding obsolete `benchmark/` or `launchers/` components.
 
 ## Source Mapping
 

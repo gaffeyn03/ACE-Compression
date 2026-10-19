@@ -13,7 +13,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
+ROOT = Path(__file__).resolve().parents[2]
 PSYCHO_ROOT = ROOT / "paper_benchmarks" / "10_PsychoBench"
 QUESTIONNAIRES_PATH = PSYCHO_ROOT / "questionnaires.json"
 KNOWN_GROUPS = (
@@ -71,7 +71,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--report-out",
         type=Path,
-        default=ROOT / "results/generated" / "Psychobench_repair_scan.csv",
+        default=ROOT / "results" / "generated" / "Psychobench_repair_scan.csv",
         help="CSV report path for scan/repair outcomes.",
     )
     return parser.parse_args()

@@ -15,7 +15,7 @@ import requests
 CHARACTEREVAL_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(CHARACTEREVAL_ROOT))
 
-DATA_DIR = CHARACTEREVAL_ROOT / "upstream_official" / "data"
+DATA_DIR = CHARACTEREVAL_ROOT / "data"
 RESULTS_BASE_DIR = CHARACTEREVAL_ROOT / "qwen2.5-7b" / "results"
 
 

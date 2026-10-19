@@ -6,7 +6,7 @@ import copy
 from pathlib import Path
 
 CHARACTEREVAL_ROOT = Path(__file__).resolve().parents[1]
-DATA_DIR = CHARACTEREVAL_ROOT / "upstream_official" / "data"
+DATA_DIR = CHARACTEREVAL_ROOT / "data"
 
 
 def main():

@@ -91,7 +91,7 @@ class Qwen25_14B_VLLMGenerator:
             print(f"✗ Failed to connect to vLLM server: {e}")
             raise
 
-    def chat(self, messages, temperature=0, max_tokens=512, n=1, delay=1):
+    def chat(self, messages, temperature=0, max_tokens=1024, n=1, delay=1):
         """
         兼容官方脚本的 chat 函数
         使用vLLM OpenAI兼容API
@@ -291,7 +291,7 @@ def qwen25_14b_vllm_generator(questionnaire, args):
                             ]
 
                             # 调用generator（使用关键字参数，避免参数顺序错误）
-                            result = generator.chat(messages, temperature=0, max_tokens=512, n=1, delay=0)
+                            result = generator.chat(messages, temperature=0, max_tokens=1024, n=1, delay=0)
 
                             previous_records.append({"role": "user", "content": questionnaire["prompt"] + '\n' + questions_string})
                             previous_records.append({"role": "assistant", "content": result})

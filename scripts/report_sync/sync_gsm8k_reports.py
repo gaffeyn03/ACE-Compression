@@ -1,5 +1,16 @@
 #!/usr/bin/env python3
 from __future__ import annotations
+from pathlib import Path
+
+def _find_artifact_root() -> Path:
+    current = Path(__file__).resolve().parent
+    for candidate in (current, *current.parents):
+        if (candidate / "configs/models.yaml").exists():
+            return candidate
+    raise FileNotFoundError("Could not locate artifact root (configs/models.yaml).")
+
+ARTIFACT_ROOT = str(_find_artifact_root())
+
 
 import csv
 import json
@@ -7,10 +18,10 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
-GSM8K_ROOT = ROOT / "bcmk_v2" / "gsm8k"
+ROOT = Path(f"{ARTIFACT_ROOT}")
+GSM8K_ROOT = ROOT / "paper_benchmarks" / "02_gsm8k"
 REPORT_ROOT = ROOT / "report"
-REPORT_SUMMARY_ROOT = ROOT / "results/generated"
+REPORT_SUMMARY_ROOT = ROOT / "results" / "generated"
 
 HEADER = [
     "Model",

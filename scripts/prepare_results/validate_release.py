@@ -7,6 +7,7 @@ import hashlib
 import json
 from pathlib import Path
 from check_processed_results import EXPECTED_CSVS
+from check_source_layout import check_layout
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPECTED_ROWS = {name: 37 for name in EXPECTED_CSVS}
@@ -66,6 +67,12 @@ def validate(root: Path = ROOT, check_manifest: bool = True) -> dict[str, int]:
             raise ValueError(f"Outside original evaluation release scope: {relative}")
     counts = {name: check_table(name, table(root / "results/processed" / name))
               for name in EXPECTED_CSVS}
+    expected = json.loads((root / "scripts/prepare_results/original_result_hashes.json").read_text(encoding="utf-8"))
+    for name in EXPECTED_CSVS:
+        digest = hashlib.sha256((root / "results/processed" / name).read_bytes()).hexdigest()
+        if digest != expected["csv_sha256"][name]:
+            raise ValueError(f"Original anonymous result changed: {name}")
+    check_layout(root)
     if check_manifest:
         counts["manifest_files_verified"] = validate_manifest(root)
     return counts

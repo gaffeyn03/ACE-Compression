@@ -1,4 +1,15 @@
 from __future__ import annotations
+from pathlib import Path
+
+def _find_artifact_root() -> Path:
+    current = Path(__file__).resolve().parent
+    for candidate in (current, *current.parents):
+        if (candidate / "configs/models.yaml").exists():
+            return candidate
+    raise FileNotFoundError("Could not locate artifact root (configs/models.yaml).")
+
+ARTIFACT_ROOT = str(_find_artifact_root())
+
 
 import csv
 import json
@@ -7,9 +18,9 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
+ROOT = Path(f"{ARTIFACT_ROOT}")
 REPORT_ROOT = ROOT / "report"
-REPORT_SUMMARY_ROOT = ROOT / "results/generated"
+REPORT_SUMMARY_ROOT = ROOT / "results" / "generated"
 
 
 @dataclass(frozen=True)
@@ -154,7 +165,7 @@ GROUPS = (
         report_dir="llama3.1-70b",
         human_report_dir="llama70B",
         ceval_dir="llama70B",
-        roleeval_dir="llama3.1-70b",
+        roleeval_dir="llama70B",
         variants=COMMON_VARIANTS_LLAMA70,
     ),
 )
@@ -266,7 +277,7 @@ def collect_humaneval_file(results_dir: Path, aliases: tuple[str, ...], suffix: 
 
 
 def build_humaneval_rows(config: GroupConfig) -> list[list[str]]:
-    results_dir = ROOT / "benchmarks" / "human-eval" / config.key / "results"
+    results_dir = ROOT / "paper_benchmarks" / "03_human-eval" / config.key / "results"
     rows: list[list[str]] = []
     for variant in config.variants:
         greedy = collect_humaneval_file(results_dir, variant.aliases, "greedy")
@@ -313,7 +324,7 @@ def collect_ceval_json(group_dir: Path, aliases: tuple[str, ...], task_name: str
 
 
 def build_ceval_rows(config: GroupConfig) -> list[list[str]]:
-    group_dir = ROOT / "bcmk_v2" / "C-eval" / config.ceval_dir
+    group_dir = ROOT / "paper_benchmarks" / "05_C-eval" / config.ceval_dir
     rows: list[list[str]] = []
     for variant in config.variants:
         valid_path = collect_ceval_json(group_dir, variant.aliases, "ceval-valid")
@@ -347,7 +358,7 @@ def collect_roleeval_json(results_dir: Path, aliases: tuple[str, ...], shot: str
 
 
 def build_roleeval_rows(config: GroupConfig) -> list[list[str]]:
-    results_dir = ROOT / "bcmk_v2" / "roleeval" / config.roleeval_dir / "results"
+    results_dir = ROOT / "paper_benchmarks" / "06_roleeval" / config.roleeval_dir / "results"
     rows: list[list[str]] = []
     task_columns = [
         ("0", "en_chinese"),
@@ -381,7 +392,7 @@ def sync_humaneval() -> None:
     summary_rows: list[list[str]] = []
     for config in GROUPS:
         rows = build_humaneval_rows(config)
-        benchmark_path = ROOT / "benchmarks" / "human-eval" / config.key / "humaneval_results_summary.csv"
+        benchmark_path = ROOT / "paper_benchmarks" / "03_human-eval" / config.key / "humaneval_results_summary.csv"
         report_path = REPORT_ROOT / config.human_report_dir / "human-eval" / "human-eval_results.csv"
         write_csv(benchmark_path, HUMAN_HEADER, rows)
         write_csv(report_path, HUMAN_HEADER, rows)
@@ -393,7 +404,7 @@ def sync_ceval() -> None:
     summary_rows: list[list[str]] = []
     for config in GROUPS:
         rows = build_ceval_rows(config)
-        benchmark_path = ROOT / "bcmk_v2" / "C-eval" / config.ceval_dir / "ceval_summary.csv"
+        benchmark_path = ROOT / "paper_benchmarks" / "05_C-eval" / config.ceval_dir / "ceval_summary.csv"
         report_path = REPORT_ROOT / config.report_dir / "C-eval" / "C-eval_results.csv"
         write_csv(benchmark_path, CEVAL_HEADER, rows)
         write_csv(report_path, CEVAL_HEADER, rows)
@@ -405,7 +416,7 @@ def sync_roleeval() -> None:
     summary_rows: list[list[str]] = []
     for config in GROUPS:
         rows = build_roleeval_rows(config)
-        benchmark_path = ROOT / "bcmk_v2" / "roleeval" / config.roleeval_dir / "roleeval_results_summary.csv"
+        benchmark_path = ROOT / "paper_benchmarks" / "06_roleeval" / config.roleeval_dir / "roleeval_results_summary.csv"
         report_path = REPORT_ROOT / config.report_dir / "role-eval" / "role-eval_results.csv"
         write_csv(benchmark_path, ROLE_HEADER, rows)
         write_csv(report_path, ROLE_HEADER, rows)

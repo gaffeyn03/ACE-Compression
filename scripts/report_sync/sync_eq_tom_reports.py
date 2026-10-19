@@ -12,11 +12,11 @@ from datetime import datetime
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
+ROOT = Path(__file__).resolve().parents[2]
 EQ_ROOT = ROOT / "paper_benchmarks" / "08_eq-bench"
 TOM_ROOT = ROOT / "paper_benchmarks" / "07_ToM-Bench"
 REPORT_ROOT = ROOT / "report"
-REPORT_SUMMARY_ROOT = ROOT / "results/generated"
+REPORT_SUMMARY_ROOT = ROOT / "results" / "generated"
 
 
 ABILITY_ORDER = [

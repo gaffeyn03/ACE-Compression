@@ -1,28 +1,36 @@
 {
-  "artifact": "ACE-Compression original evaluation source release",
-  "prepared_at_utc": "2026-10-19T03:04:49.026239+00:00",
+  "artifact": "ACE-Compression anonymous-aligned public evaluation release",
+  "prepared_at_utc": "2026-10-19T03:27:30.095003+00:00",
+  "anonymous_snapshot_sha256": "e56949943d148aa48768dcd803611cf20b19a281e01118a64499710da6212eb0",
   "verification": {
-    "python_syntax_files": 906,
-    "shell_syntax_files": 552,
-    "offline_unit_tests": 7,
+    "original_anonymous_files_present": 15765,
+    "original_files_byte_identical": 15244,
     "original_csv_files_byte_matched": 13,
+    "python_syntax_files": 938,
+    "shell_syntax_files": 552,
+    "offline_unit_tests": 14,
     "gpu_evaluations_rerun": false
   },
   "files": [
     {
       "path": ".github/workflows/check.yml",
-      "bytes": 483,
-      "sha256": "91915240aecc66f7894cf23625a3b2843d19e7ef24b3a92bb5f2358d9d135c5d"
+      "bytes": 550,
+      "sha256": "c1bb55f4cc5f6efd617ad1612243858cf546f145b452989e2bf63458c61f70e0"
     },
     {
       "path": ".gitignore",
-      "bytes": 791,
-      "sha256": "e71760b245f7622c522a3e89caf8781ff08359aa04bc3443041777ba4e4a506c"
+      "bytes": 1077,
+      "sha256": "472f6491bee96ad614ecc1129f0b31bf804fcc41c3054864051809ad27cf2dda"
     },
     {
       "path": "ASSETS.md",
-      "bytes": 4972,
-      "sha256": "d7220a3c8750af437400cdd1d9cbd024485c558b5c732913da8847493bac1912"
+      "bytes": 4959,
+      "sha256": "d959c01cb4f60afca057c3ffde3321b1b0979a077b5dee64d429d937b0c38b98"
+    },
+    {
+      "path": "COMPUTE_ESTIMATE.md",
+      "bytes": 5154,
+      "sha256": "a4ce16813eed0a05b17431b11bb7588038726ed37a0606dd282133d15beee53a"
     },
     {
       "path": "LICENSE",
@@ -31,23 +39,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 2672,
-      "sha256": "3fab1e37216a89947fdcb8c678899dcf36ac3d4fe0aef27c42e8cc6cf55d1c3a"
+      "bytes": 7554,
+      "sha256": "9df3395e69fa5dc88167e239dba6ddcfabb08bdef2e0793b6f26743fd8a8b201"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 2914,
-      "sha256": "d2192efe15b1adfe389e902562f689c1cd445c24c16e432a2ae014947f8cc535"
+      "bytes": 7459,
+      "sha256": "33431cc512f2cd7365da769ae1a1167e1a9cf3f3231012be1598858a494fb3d9"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "bytes": 2052,
-      "sha256": "6fa45478ef73cfb966e4a4745146b3d8d0fc79c30c6f247d8facb1d6a5a5de48"
+      "bytes": 2020,
+      "sha256": "29cf1ac42cbfba2a8bc139e8a9f9465fc59bdb759d3577c9a03d54750c2ae41d"
     },
     {
       "path": "WORKFLOW.md",
-      "bytes": 2100,
-      "sha256": "e08c487866c452990396869568b939518c189d19146b53d400d4ec6789e59742"
+      "bytes": 11110,
+      "sha256": "f25fd1e04b307c367b7c4bae804927946667a9310c5f939ff68709e503a2f3d7"
     },
     {
       "path": "compression/pruning_scripts/DeepSeek-V2-Lite-Chat-16B/run_2_4_sparse.py",
@@ -340,14 +348,24 @@
       "sha256": "16aeea760dbec1122e7aeef97573a3e453461d3d28205877df89d53352307a0e"
     },
     {
+      "path": "docs/RELEASE_NOTES.md",
+      "bytes": 1713,
+      "sha256": "a18df2eb45650e1dfb35df8c32f2d508fc22ca294ce463a51bc2984674bace00"
+    },
+    {
       "path": "docs/RESULTS.md",
       "bytes": 1528,
       "sha256": "ab3300672970224e1614a5317ee39949881f0afb21fc38c8f949c95fc0959de4"
     },
     {
+      "path": "docs/SUBMISSION_NOTES.md",
+      "bytes": 2071,
+      "sha256": "ea9fe548a7b464f951a9a3e04598b1bf9bd40ba00846eb55fc52344dded2c39f"
+    },
+    {
       "path": "docs/VALIDATION.md",
-      "bytes": 980,
-      "sha256": "7c7d64dad067e640cae7c84d8ba853237472f6080febc2146093617bed69ad85"
+      "bytes": 1731,
+      "sha256": "27201bdd49bb825608b12a81698437c3250c5c38fe13b2b75af7b118a563b47c"
     },
     {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/CITATION.bib",
@@ -440,9 +458,24 @@
       "sha256": "b16a131beac02ef7a2569494a7f45f13763fa60d459ef8343910f4d418e79cf9"
     },
     {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/examples/lm-eval-overview.ipynb",
+      "bytes": 51091,
+      "sha256": "7361d9ed6584cd063caad81fff5be30abb72995012f682ee0d663929d4e938d7"
+    },
+    {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/examples/transformer-lens.py",
       "bytes": 1985,
       "sha256": "6879d6b714ff89d449e4b43a18f2ae2db048828ad73d12e53fc5e96ccbb09d20"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/examples/visualize-wandb.ipynb",
+      "bytes": 5374,
+      "sha256": "773ad8b2c5a4a34c8413e7d2df8d40b3b9697cba177042fa01f3cbd434169a63"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/examples/visualize-zeno.ipynb",
+      "bytes": 3563,
+      "sha256": "658b0262179f537a2cad7356601466d8f7137db84099def83e63a1b9f696aa57"
     },
     {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/ignore.txt",
@@ -648,6 +681,126 @@
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/loggers/wandb_logger.py",
       "bytes": 13844,
       "sha256": "549e8b98b637be97cda8bf74b8016142dfc4d9510b75a30f500e637c194d8730"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/__init__.py",
+      "bytes": 2943,
+      "sha256": "a673832cbdc1498fd24d122d45e981e88f515620994705c74dd9d2bb3a1b885c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/anthropic_llms.py",
+      "bytes": 12816,
+      "sha256": "60e243ffabb8b0f56969bc3f27639b6869bc50fabfbb0d4791b7c4fc5d7ca8be"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/api_models.py",
+      "bytes": 34487,
+      "sha256": "6eb4b872f50856e4e97816fdbf9f002690466c45729722b6835698b03c2097f7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/dummy.py",
+      "bytes": 1991,
+      "sha256": "0f756e506663dc24df21cc1ca659d0deb162036e3c20acbfe69cf1a0d497989d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/gguf.py",
+      "bytes": 4815,
+      "sha256": "157af531aafdad4e92fa482c45eb8958349002c67f982c20260a01ee19c11e65"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/hf_audiolm.py",
+      "bytes": 11704,
+      "sha256": "3b83b722509b45455fc11aeb9de8f1da02090990ee40756c6eb370fb33f6e4aa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/hf_steered.py",
+      "bytes": 9888,
+      "sha256": "fdd3bfe1103e0b324ffeda62fcd8df8daa4f27820d6dcdb43b3f279e7562d4f8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/hf_vlms.py",
+      "bytes": 31680,
+      "sha256": "74d865702899df3104d8e6339a15991acc297a5721a76edbef3208bf03c06a46"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/huggingface.py",
+      "bytes": 66371,
+      "sha256": "249b6089886a6942ccb332ed6fffc2cacdf1f8606be9d929eea3a91ebebb5c09"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/ibm_watsonx_ai.py",
+      "bytes": 18224,
+      "sha256": "fddbefd84e5af0e7d817a059e9c3a550a8cbd313700d71e81b0a0e7285d013fd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/llama_cpp_direct.py",
+      "bytes": 8792,
+      "sha256": "509331a735396a35f24a2b6d58fb6f02771b90d96f49f9ed55e7496e6e69d6ae"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/mamba_lm.py",
+      "bytes": 6237,
+      "sha256": "dbbd9d614b2ba8ce8f7bfb5ae51369809b2cb8a34ee733e37e5b69e0acf6b2c9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/nemo_lm.py",
+      "bytes": 19357,
+      "sha256": "dd32ad3c181ae1213a571b4d1463987d3612e8afd0017cd63e95294630614284"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/neuron_optimum.py",
+      "bytes": 28840,
+      "sha256": "da4147e426e1e682c527e8f8112fd0de79331b2d51d931da1b7bd9d624e39675"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/openai_completions.py",
+      "bytes": 13516,
+      "sha256": "317c1d2dd8ee443cae57d1ff182251b3302de3638f1a655fab19eb9f84eb20a4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/optimum_ipex.py",
+      "bytes": 2342,
+      "sha256": "d266ebc3c5d7c0af33054ee915b8654b22a47440a0d879bff306ced488888ba0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/optimum_lm.py",
+      "bytes": 3056,
+      "sha256": "539ddefd1e1912ddd70aee0a8cf66d454dcc9eb6339d2473ba8f82287ec91e67"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/sglang_causallms.py",
+      "bytes": 21266,
+      "sha256": "91628154771ac940fcf141191a634b6061d1fa608e2bb4df6361cdcefdc58226"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/sglang_generate_API.py",
+      "bytes": 3360,
+      "sha256": "c9ca4142be44913b41903c83ab685b4a3dfe69163696e340ed31c86e9efe300e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/textsynth.py",
+      "bytes": 5877,
+      "sha256": "9d998493139a580866cc5906488dbb9f8f4ef6e54313121cbc767319586119f4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/utils.py",
+      "bytes": 28107,
+      "sha256": "5ebf9350fe5a2479682526efb799633bfa078ba9b487ae028563b79bf5332eeb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/utils_hf.py",
+      "bytes": 4805,
+      "sha256": "72f7f006683841dabf59220be18040d2b83544163721aa61b92e146e7504cc88"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/vllm_causallms.py",
+      "bytes": 33116,
+      "sha256": "e6d05fef7cffc796b682106b3b82b37c215d3b485966f298fd28899e7aaa6984"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/models/vllm_vlms.py",
+      "bytes": 12354,
+      "sha256": "2a3ada9a6d480ed3774cb220f0b58c19e85d3d3fb7a662788d1411fd7d5c6b7a"
     },
     {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/lm_eval/prompts/__init__.py",
@@ -70595,6 +70748,51 @@
       "sha256": "27ba04dbef4c57135d0feb2ad5801c5652c89726c7c125cf5078bee990a95cf2"
     },
     {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_api.py",
+      "bytes": 9610,
+      "sha256": "cca2355955ecc9a528d3f6c650b8f5e0b450317d915641c33ab05b0da853af57"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_bos_handling.py",
+      "bytes": 23028,
+      "sha256": "1e0debd9c494f62aa56d4031938d2d1adb5c0c55f325c53c42b45d42ae7c7f94"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_gguf.py",
+      "bytes": 5452,
+      "sha256": "9833752c12deb031d0b9f2d3fc3c4ebfc5005bb4bba220c6ce51b2dcd46c0b52"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_gptqmodel.py",
+      "bytes": 1538,
+      "sha256": "8ebe5b5ac4a32b38cf76f751a89b6d4fd26ba37ecd09efb31d799004504c8b14"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_hf_steered.py",
+      "bytes": 5754,
+      "sha256": "92e04b47c4f02bda21faa2ae620ff6421aa72a0eaa32e7959d43e0061bb5be69"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_huggingface.py",
+      "bytes": 5407,
+      "sha256": "17f03051a479559388b17dbbc99b14d84711b5ba6441e3ec266b8df174151c5e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_openvino.py",
+      "bytes": 2966,
+      "sha256": "5a0e7efbc32d76cf9125527fe5ba075a0fd417b4f8da9ca8c4853655c4aa80f5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_sglang.py",
+      "bytes": 4992,
+      "sha256": "e55255e5f4a6850c0d8dc21ce9bbeac3e7e72615a7ee2019dc2a4725feac8248"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/models/test_vllm.py",
+      "bytes": 1821,
+      "sha256": "f85e1eb78e80e1fa01d753635aa50088145e8b5825ad0769aa7b8ef8087df94f"
+    },
+    {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/scripts/test_zeno_visualize.py",
       "bytes": 1471,
       "sha256": "7d881ba189f6d9d85a1aa327c9e967a18f33efbc03411dc26ba004634c9ec5dc"
@@ -70693,6 +70891,3436 @@
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testconfigs/sparsify_intervention.csv",
       "bytes": 159,
       "sha256": "8d8de1634c8b3f1e609c3aa29742d50eb7a3260fcd094cde012d63273395641d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ai2_arc_10_hf_pretrained-EleutherAI-pythia-14m-dtype-float32-device-cpu.txt",
+      "bytes": 419,
+      "sha256": "544ac9a8c76d967350393f8275b25cd77b335818e84aaa550d55699e3df3c429"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anagrams1-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "df267b6e06ba0d985b13e4677b66ee4ae8204c945aefbffeb01ea41fd1a05d8e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anagrams1-v0-res.json",
+      "bytes": 89,
+      "sha256": "5cc06ac5893b2cb0b0f2de11d1912e36547be8e9e8da32f58fd9cde49df07c4d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anagrams2-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "c0c0d5bc5055422e296926a483b2f16e7dcebc5addaa1336d7d876ea2338dddc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anagrams2-v0-res.json",
+      "bytes": 89,
+      "sha256": "a7a07f6d70c82c1a5d82cefd8d5da129a4f806714208d5be582d18c2b84015c1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b478131f812dab46d37a1925590a97b868da4ae83a033199c433e5055ea937af"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r1-v0-res.json",
+      "bytes": 104,
+      "sha256": "f1ce5cf4a1593b171ed95825c84c0edb9469b5a3267813820d2db1be09981f41"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5f5aa59c9dd12c561812154111297deb04e294ec019586ad27b879b194420eea"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r2-v0-res.json",
+      "bytes": 104,
+      "sha256": "f322c8721701370b6b54c902407c004ae6f9b28c1a205df74206e74f78ec3820"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r3-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "db41f3c46efba0cfbeff223ab48ecb6f0fd759a25bb9f49766d892ae51a560fc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/anli_r3-v0-res.json",
+      "bytes": 117,
+      "sha256": "377f337c8c34f675af8d4ca46600da5cdbaf7ac3f361d27ebd45cac166695118"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_challenge-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "600c43986e8b9b0d75e9788f8761194977c5221f08d628efe188f09966fc7a8f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_challenge-v0-res.json",
+      "bytes": 203,
+      "sha256": "884db1b622f9a45095a55e2fde76f9650f799035bd7a282e12011ae29d913dda"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_challenge-v2.0-loglikelihood",
+      "bytes": 64,
+      "sha256": "48584e53c169a140f8d494c4176293f1b7fb4b622aa5d3cf47d3da72da81a5cb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_challenge-v2.0-res.json",
+      "bytes": 206,
+      "sha256": "578acd941e16f8d2af2f7cf0ee116d8e4af3925855f5b60fb724462b47c4113f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_easy-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c7455d61f3b7f3575c39d8968b7ca8f46c050108b1e0a2be302126c89bf0e470"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arc_easy-v0-res.json",
+      "bytes": 193,
+      "sha256": "37d682662a428c1b5341b966954b7029f7128ee96a2fc0aa1b3c79b36a98c237"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_1dc-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0356a161d11452eb4d40c2c50fbd8a3046002ef59730a7413e79cffef3650b7e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_1dc-v0-res.json",
+      "bytes": 99,
+      "sha256": "d3f80df7cf3d8470b2d5917e82ab037e2953e83248d837ee99e0b1962c935353"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2da-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2e48235a082174153a968f479fb4c263554be073b55ff9d92ab9899645874271"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2da-v0-res.json",
+      "bytes": 99,
+      "sha256": "7bfc47f09732de5b98ec0cc039cf11422fea2fd394d2a9490e61936fe2f91b3b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2dm-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6de948bda9eec6c8871cfb6d73307788979ac5fe997d334ecaf2dc4a6ae6f770"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2dm-v0-res.json",
+      "bytes": 99,
+      "sha256": "f761d086b22f7a2542c1a36cd7af24281158c962fde47d391edb3b813910a78b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2ds-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c5f5527facb51d06484e6247b428a6457ff861193b195126b814a1daf9e8e3f4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_2ds-v0-res.json",
+      "bytes": 99,
+      "sha256": "15b7e57158a53061e103403f850955a1ca1b167c53db48f7ec85574d2b6fafe0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_3da-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "eb15e554097b76ec601e497bbbb03518dc1994f9cb6d4f04c0912d33c164e08e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_3da-v0-res.json",
+      "bytes": 99,
+      "sha256": "2377d15f0ff368d39c545bd57dcd1880400bb7d984bfd1978f231af98269a53c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_3ds-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "dee526736021235d047ee176268ea41675094ac56707eaa47445c9b0b55dad5e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_3ds-v0-res.json",
+      "bytes": 99,
+      "sha256": "b972022ae302b3f9a994cea0fec0f97c78f2324556ed2f2961260fa559ba8ebb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_4da-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f551a875a37ad35a0e8643842d2e7a2b04b9af95b35edbc373c4152a2789cfbb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_4da-v0-res.json",
+      "bytes": 99,
+      "sha256": "75ba225d5f023532c0a4271a6f7aa327221afa84dd89dada94d653eb859e351b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_4ds-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a54e48258b4cd796b11fc61ece4908f3861de06c522a375f663b6a514013fcae"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_4ds-v0-res.json",
+      "bytes": 99,
+      "sha256": "8faf8c5b56892992b190b3c03e9e9e4309cd839ae2d779b9e15db9dfc2493959"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_5da-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ed3d031fe8f5bbc591f20ce38544d331df73764f20a7502b25b092650e437ccd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_5da-v0-res.json",
+      "bytes": 99,
+      "sha256": "115ef43e7229083dc1dd0bbf406a67d55351ccca041d4594a9b2ebea5cda7324"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_5ds-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "591951d599920f11c1d8048721c3a732c002546980d7d28bedaed7661e43b1f9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/arithmetic_5ds-v0-res.json",
+      "bytes": 99,
+      "sha256": "ed5b0f26a95fa9d2cf67c5717af75871e648a0202e807613baa8526dd9965408"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_adjunct_island-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "4aa1fd4de80bf3821daf2745daec7f80435b53b3996eb7f3d335b44c75cd4f26"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_adjunct_island-v0-res.json",
+      "bytes": 128,
+      "sha256": "ece407dd187455fa8f6a66c8793bfea34d4bf384f44bdbf30da6efe5f1af49c9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_anaphor_gender_agreement-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "effedc9c8fb1d33b22a5e401579640a60c7d87003c30a5d16aea8cdeeace38f6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_anaphor_gender_agreement-v0-res.json",
+      "bytes": 148,
+      "sha256": "d568b6727a4702b61a4137b46e5caa015d753805f9e9d2941853c75529b3e2f8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_anaphor_number_agreement-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a588177099ffab9289b8516e01628feb89f1f254133aafb528032ee7d23be2b5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_anaphor_number_agreement-v0-res.json",
+      "bytes": 148,
+      "sha256": "67310bf746a74d6074b6a3199c87d688b115e8cb47431793415f676354227d03"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_animate_subject_passive-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "aa03b1f9ed860695b8a7e24321b73d1b0a2a97dd87e6eae05e97c41a6d862051"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_animate_subject_passive-v0-res.json",
+      "bytes": 146,
+      "sha256": "1a57c320526a7b37601bd1b8581cab596179b4d16a0a8c211cd27bc671c643db"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_animate_subject_trans-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9df189c69c469f52114efdec71c6babbb4a8114d6d9de70dee924538f247184e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_animate_subject_trans-v0-res.json",
+      "bytes": 142,
+      "sha256": "0d01f55c2b2493a9dcd621cfa2b6f05e10852975b384a9832191ad18ded4c22b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_causative-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "21003c82fd2a25a3522927c8349cc23b14ce0a5d9695e5b67f33b130f62e3f7b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_causative-v0-res.json",
+      "bytes": 118,
+      "sha256": "7197192207db5e34862d107fce130ade4bdd63aef6facf3acd2a70d320f15439"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_complex_NP_island-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "159bebcb7f5d06a73e80dc805b7b3f0d0f4b7c997818b49ac09eab920ad5beef"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_complex_NP_island-v0-res.json",
+      "bytes": 134,
+      "sha256": "d72da00c99bbf246b67e8f887fc1fc1e8147e9026954c8ec555af8646b27869c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_coordinate_structure_constraint_complex_left_branch-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9ebd4b06ff504280c6f20e7fcccc589d548bfca22baac00ca82e6aed73731208"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_coordinate_structure_constraint_complex_left_branch-v0-res.json",
+      "bytes": 202,
+      "sha256": "317ea1dbdf37a671700e7662baa310ae419c4cf45c9112d021bdf19cadf351ec"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_coordinate_structure_constraint_object_extraction-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "55d6e936d1fe517d165cfaa921e6347fbea6f865f53770ce1a4fcf51da67ecb3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_coordinate_structure_constraint_object_extraction-v0-res.json",
+      "bytes": 198,
+      "sha256": "c99b153e4ec1e55bd0e03c9e81a5e88eb77b5f6496c2f1e34ea5d25a2d808027"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "fe32dd0f269ccfb52d94dd553cc8cdd9bfc967f756a298c1df263bf614edbae6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_1-v0-res.json",
+      "bytes": 154,
+      "sha256": "a6626f5bbfe5c50f55777b8cff10b44f647c9f8341d672adde2df1e2190cbf17"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1a8fae867e54bc806d60c9c0f1b0ca52513cdb29bc742c4d32421a3c55449c27"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_2-v0-res.json",
+      "bytes": 154,
+      "sha256": "09db2b0984b2b00ae4598bb35f2e93826cd40b240722d2ac27a2684fe95336bd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_irregular_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "18e1f7e37bb4e3a1095c87ebc379cfccc33bc08251830c358df1c3ec9187ca48"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_irregular_1-v0-res.json",
+      "bytes": 174,
+      "sha256": "b5f493c65b54ea145f8c792cf96de6a9b225442b2780d462c3cf5280ab902da3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_irregular_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f0131422623b75d7e00ccf354d1c7807c5da3e2d4f5ae702c9c2a88a93c9f920"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_irregular_2-v0-res.json",
+      "bytes": 174,
+      "sha256": "8691fb37b80d28bddebff217aa79b4fa6f10fe298eb56e3f664c1d6324e612f8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b69df444fed2b5db119a9276a75a3dbdc0710b70e570e552668ecb332c1ed0c2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_2-v0-res.json",
+      "bytes": 172,
+      "sha256": "c060fc40e54986a10a88608c3a9b0d418c20ac6adfd5e2761576b2b7093cb777"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_irregular_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "db2af61f3ba33fee9ff8b0cbe8e7631e34e3f3e892ebb9745f8b1c1f5b751712"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_irregular_1-v0-res.json",
+      "bytes": 192,
+      "sha256": "e331cc73f5ffc153385dee582256f4156e84aa4fff8a4958c20d4fba53e52121"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_irregular_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "20e2c5d5609ba84ddc6d4e88c59673d02d9e5240986325ab407cd6c18836c8d4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adj_irregular_2-v0-res.json",
+      "bytes": 192,
+      "sha256": "44e23eaf18b5dabc3c233c28999c879a5ea3b77384ff6a1e4545ba12a8ed36d6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adjective_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5133922e2099439d9d695791834cb8d1ef08bfe6004a9f6b018c7bc50c186e7c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_determiner_noun_agreement_with_adjective_1-v0-res.json",
+      "bytes": 184,
+      "sha256": "1d46c9e23241f13cc7ea5cc837d2bf5bbbd5d2ef8725c0d849e3bcd9cd6edac3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_distractor_agreement_relational_noun-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0d5d1df62e0b53bc64e248d35b688caec2daceef8310073cfa53fd7f67e952ea"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_distractor_agreement_relational_noun-v0-res.json",
+      "bytes": 172,
+      "sha256": "e576ade92d624fff6adba9832192c48d66201bbd8f5ffead7979ddbec990327f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_distractor_agreement_relative_clause-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "80ef49c6e7b4fa46e585b2a91fd6e833259971c1664d6a1d55bb9ffd3b4dcce2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_distractor_agreement_relative_clause-v0-res.json",
+      "bytes": 172,
+      "sha256": "de547e4c8e602a9dcd1b2aee3f4d0d0f38e541111e557a76b1275d7a2fa79494"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_drop_argument-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "aa4892f47eb387d9df07ae7fa729e468e2479a69120ff25b349bc3b84b369dfe"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_drop_argument-v0-res.json",
+      "bytes": 126,
+      "sha256": "115d9703d892eda5254f798387f9bf8022fda79404c7a836fa77c918188cd7ff"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_ellipsis_n_bar_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "06bc3f793deca8a08165e8a639243b909c2c5f5f32498cf37a3cb3145f7f422b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_ellipsis_n_bar_1-v0-res.json",
+      "bytes": 132,
+      "sha256": "79c4a18389cfb0fb381b7b65dcb0b77b65843da0afda0acba84a38051b1a2acc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_ellipsis_n_bar_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2d63d44b8c52c3e445fe0993ba9f709f53478b0dc1abfd2a5252dbb2effb3236"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_ellipsis_n_bar_2-v0-res.json",
+      "bytes": 132,
+      "sha256": "4d665ad4cc12e4dfd90dbeb626f502dc29c1bbc5f579cdf07b0dfe3ee365ed51"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_object_raising-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "70d88e70b7f7ab8103d1dab63d8172410552ce087aeb4f0703f85da7addabae9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_object_raising-v0-res.json",
+      "bytes": 164,
+      "sha256": "1478af87500521d858461c68bc59bd8b88765bb259b29e82ea6b47fa5ee70c9e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_quantifiers_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a5e26a77b7e9897e94bf7a5ffb3f795f1b11242ceb941f2baeb7c2f98ea2fc75"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_quantifiers_1-v0-res.json",
+      "bytes": 162,
+      "sha256": "59766560aee9401eb9d3918eaa65951942a6e50b18e5e6138a951db093699040"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_quantifiers_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "78714d7e1b19a76c9b72bee32f5bf20a43230307f5ffb983a525566c34f1b35a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_quantifiers_2-v0-res.json",
+      "bytes": 162,
+      "sha256": "f9bb7ffceccdc9c6406ad106f388d161452ef9b1e7ae56a4837214266e669455"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_subject_raising-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "14b9e57ab919830e78c202929bd26ceee474bbc5fc64f9dcbe0a47c13165f5ab"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_existential_there_subject_raising-v0-res.json",
+      "bytes": 166,
+      "sha256": "ec9adb2d2168ca08c9064a82a68df6922c64e66bd58b81d242e8327892406bf3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_expletive_it_object_raising-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2e8840c1df0571d4f61d3855861d8c0c87a8a2604ea6e2484d2ef5a9a78c267f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_expletive_it_object_raising-v0-res.json",
+      "bytes": 154,
+      "sha256": "16a5e12e7296c937fe0f9cea1ffe60cd2b7f47dcbddbb2bb86d169471e21affc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_inchoative-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b709f05546ac833fe861254a72b54fdff4701d72bfd265fe1af4d8f0f7a4509f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_inchoative-v0-res.json",
+      "bytes": 120,
+      "sha256": "1d259e0026594c4976d68b659f3b362564d152041cbc05c57e8f14b926ba1bc2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_intransitive-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "dad44c6f7139a802702a0f0dc93f0f8ec8b8e24f724f9a7ce746f0c83c05421a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_intransitive-v0-res.json",
+      "bytes": 124,
+      "sha256": "deee27c3912a4294da6cf7d083431dcc3c5e67f769bda2dac0fe0ed07190ee35"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_past_participle_adjectives-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "765394a71deb883bf4a51c1ce22e3cdab6631a4712b00b2b911ec790dd52d71b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_past_participle_adjectives-v0-res.json",
+      "bytes": 172,
+      "sha256": "ef1f9f8f6c17e4f9c4db2f3cd863ea77030addbf83eff6da9ce76e2e2bd5fe4d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_past_participle_verbs-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "923d4628bacd4d0e66d23cba16fc7ed855c4d8a4382465f896574902eb4881fa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_past_participle_verbs-v0-res.json",
+      "bytes": 162,
+      "sha256": "1c6797876280b110a7cc50cec1bf99953b4a17108a2d2a24de0f2a7bbb9f1ef5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_plural_subject_verb_agreement_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2585e8341e7f7133ba3b46faed4c198d1ca469d7409e317909e7919b8f6342ca"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_plural_subject_verb_agreement_1-v0-res.json",
+      "bytes": 182,
+      "sha256": "318c17cf74ebb55d63182c3dbd3dadcfae7ae6ea4ddca3f2eecc6ff8120eabea"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_plural_subject_verb_agreement_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7bb1ada5054b6a46816f145c35745b56dcdd7714a2c5c1c31a0911585d0ee51f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_irregular_plural_subject_verb_agreement_2-v0-res.json",
+      "bytes": 182,
+      "sha256": "f5731bceb9dca0e6fbcc1da87a526a3d471f7010621b65d86ec4fe2774217a83"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_left_branch_island_echo_question-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "378e537236f5d21ce252d914cfd905312c71e2d35d104a2b1ad5a71b0a47a683"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_left_branch_island_echo_question-v0-res.json",
+      "bytes": 164,
+      "sha256": "33f9fd07624fffdacd314ce824497779c7c427c0f3f0f1af08b33b2d9c35a654"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_left_branch_island_simple_question-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5e235c4e23d957584b970f485dadddd7efa280985f4e34664f2f086008a3d04b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_left_branch_island_simple_question-v0-res.json",
+      "bytes": 168,
+      "sha256": "4189d668ebfeb75e02678be12ba65340532f9da4ce53129cdf0ce6f9ff5091fd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_matrix_question_npi_licensor_present-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2f7bb4fcfd27641824b292d798fdf8688046c379175de7ea1b87ff0dbddafc17"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_matrix_question_npi_licensor_present-v0-res.json",
+      "bytes": 172,
+      "sha256": "bd031073a3d1fa6410f15a35b3142076a1eadb35f90446446442d7cac9d54af2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_npi_present_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a07ebe022ac48bf7e9c919996369c612a916c709660c4fbb6a8d715e49e15532"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_npi_present_1-v0-res.json",
+      "bytes": 126,
+      "sha256": "0de22f7f15757146da85de0b3974d42f9f5de3887ea55c08982877b5ed051585"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_npi_present_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "32d28afb382e31d842b3e989615ec890b0f6cf4771a60e162d4278b0e5de90b7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_npi_present_2-v0-res.json",
+      "bytes": 126,
+      "sha256": "67ab3d5466adba4b7fa01a000060c0c36be3500f56c2b868de6c977e6ee79245"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_only_npi_licensor_present-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c68ca3381697273e5127b69953a088789492bcb7a47c9a6295f16e9e1a740221"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_only_npi_licensor_present-v0-res.json",
+      "bytes": 150,
+      "sha256": "e6ff59ce46114c5e92a751cb5d035a692e7e27b885e34fbb4afd0426c615123a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_only_npi_scope-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "13dd393655a1d60d4d7710b905c9ee4080a69508611c403e2ec3ac4a5035bd4c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_only_npi_scope-v0-res.json",
+      "bytes": 128,
+      "sha256": "4a937a471610659dd2a09a24e14d2338bdfb3512a0a6abed39f72131f3771f10"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_passive_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "cf2841e1fb8324ae93528bc5933c01c703e736c5eaffc59224bd015bad1503dd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_passive_1-v0-res.json",
+      "bytes": 118,
+      "sha256": "1a730965d4ad69d164849b4bc9902496b680c4f34ef3b208e957e4a705a3abba"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_passive_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2c50d5c0c6c5c24f72cc7d2feba5bf14c17fe1546e5d11232b8d026a0ccbc6bc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_passive_2-v0-res.json",
+      "bytes": 118,
+      "sha256": "a48f9647e795c4ee256973d4ab00b11bdde26ca50ead72eaac13d1386d0edf6b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_c_command-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "93d0a4ffe928594eaab89683f6e54ffe571f13709bcdfbbc1b7016c92a985872"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_c_command-v0-res.json",
+      "bytes": 142,
+      "sha256": "49cb28688001d04b3dc191168823b2c39cc62e468ae8e164fd3a50dc2c10a974"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_case_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d172bc73e06b09ab0667f7f91c76610deba39b8c95bd028e2c75b481d8100618"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_case_1-v0-res.json",
+      "bytes": 136,
+      "sha256": "b1939bbf0066ed8ad018536ccfdc9ddf5e052d8c149fc66f04b80bf0c2e03f2e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_case_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3e95a56c76915a0d3c824aec96234a6d5314918e01eaffb077d3d6f3d307f493"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_case_2-v0-res.json",
+      "bytes": 136,
+      "sha256": "957623c8879c6aab4112434a0c4dca0e403a275a3451840e25eec15d9835e548"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b8f2b6c42352ff7d89d74784d9bc5fa5d750d207216c403d551707961d24a22b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_1-v0-res.json",
+      "bytes": 140,
+      "sha256": "7c85881fc828dbcfc0d69cae2253c20346fa53758f98ac77eaa84d6906e770e0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5b191d72ae693c8741a544b1136abb027075642dc80ef7c698707fcb36375a9b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_2-v0-res.json",
+      "bytes": 140,
+      "sha256": "1a817e4ee02c18ba2e9be54ea48e18492921b53f940ca49da8cead569bc19bb0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_3-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d31eaafe503de668aa25bb5c515c1841e199861ba1cbcca3a84c73def00aaa24"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_domain_3-v0-res.json",
+      "bytes": 140,
+      "sha256": "b19d930b5e45655230aa2ce59ed43ab6c5f35706963d8b9c645207a2f3114b50"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_reconstruction-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "15fd8d1fec24b455345b42a6b4ca4bd41fe093c0600a1b3f462e429de379e8f6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_principle_A_reconstruction-v0-res.json",
+      "bytes": 152,
+      "sha256": "d2708c576826c70c33c9b06ec64a8ac00c2b3bc6c5f05fa0c279524bbc900347"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_regular_plural_subject_verb_agreement_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7df57a4657d27daaba9c7eac917d7538d2b49b892986f7c4c82a21c0d1ebdf75"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_regular_plural_subject_verb_agreement_1-v0-res.json",
+      "bytes": 178,
+      "sha256": "c9c278a5046deea90c076ad1b5281911026478514014cae14f73ba06c2af9a51"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_regular_plural_subject_verb_agreement_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "77e3157d7e0c61390b62727f110bf0fa568c47e9efee99663f415c2985dc8d6f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_regular_plural_subject_verb_agreement_2-v0-res.json",
+      "bytes": 178,
+      "sha256": "1de3abd0350d32d6349c5df76f4611a8b81c1845b50f68726bd00ebf8e818b74"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_negation_npi_licensor_present-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "541c3de6cd4051dad411047178919dace936d014436707f283377998cc91016f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_negation_npi_licensor_present-v0-res.json",
+      "bytes": 180,
+      "sha256": "21adc3e0f23d584478650fa7c6859b9c2af1cf804c3df1f67f7ecc7d280fbe08"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_negation_npi_scope-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d95fd3c4f2719157837933389bf1a0abb282e3133450ef6de28f6f7a2b368c32"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_negation_npi_scope-v0-res.json",
+      "bytes": 158,
+      "sha256": "c2de7392f9d0551e14b3f4eb08ba14653523fd0592a70ec70fa1934afc5c2959"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_subject_island-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9a4185dd25dfc09bbb0c5d34ae13b59ae495d9bcdf2aebcc20d08ccfa8596d8b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_sentential_subject_island-v0-res.json",
+      "bytes": 150,
+      "sha256": "c410b96f4439d7928b6eab7cc916c7b0deb466ed99fdbf82a5259be44203205a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_superlative_quantifiers_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1c941a5f2eb20bee8973f080e18eec94cc4012c47252b497ea3af2cc86c0dd14"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_superlative_quantifiers_1-v0-res.json",
+      "bytes": 150,
+      "sha256": "39b384842892bfb6308add5d80033917bbf433e7f8a5fe3371b67e829267fa5d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_superlative_quantifiers_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "8516910383f2f843b8e4fbaab0fd788c74f879623dff0471f79029ef7e4363cb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_superlative_quantifiers_2-v0-res.json",
+      "bytes": 150,
+      "sha256": "dd50765fe1ba9ac785d99374317ea923c99d8a76c35e67f8c76fae21a649daf1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_tough_vs_raising_1-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2586eac415b2385ba9ba28c06edf19a5ee589521a32a47d7489b13f17b012d19"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_tough_vs_raising_1-v0-res.json",
+      "bytes": 136,
+      "sha256": "1eae1a2efd039625e5b4c3cb8b63fa05d4e0107fd3ac5908b0799ae4e39a51c2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_tough_vs_raising_2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "dfaa29b9ae2a05f4669a0914ab277f109bf1563bc8ae73e80bcc11203ed8a791"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_tough_vs_raising_2-v0-res.json",
+      "bytes": 136,
+      "sha256": "97af13663b4b6d20846d3ca1e7df11ea044885691baaa32ee4713b4e87d245dd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_transitive-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "8698fc4a262a855c45120bbd5ec48c72a86346df58088262165ce7dae325b5b2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_transitive-v0-res.json",
+      "bytes": 120,
+      "sha256": "16f8d85c95d78a3a09c71b516b12b1eddb7bc051c250c6005e0cc2a56a6f25c0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_island-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "204b082b69e762e269bd3c8ac14ae29b14c4ed7b1a59b2ede24021f68854c0b1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_island-v0-res.json",
+      "bytes": 118,
+      "sha256": "c3ac0713c81a5e32903aae7f41286938820ead4ea5dc977b403006e9610c2d83"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_object_gap-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "76e88e73f4411c12f813f926293839bcde52b6e1322609d6a0aec905ab7ccaf0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_object_gap-v0-res.json",
+      "bytes": 146,
+      "sha256": "2ad91f488eb75de57d58027861f668334556981c7e1f750c2c4433f9a0ec6506"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_subject_gap-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "4177603c0baf7f9d9ce65d96c398217a827bea315dad2ee3d9d5ce90eafe90ec"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_subject_gap-v0-res.json",
+      "bytes": 148,
+      "sha256": "9704cce54976440bffe7010ba6f9e22fcd6fd07fc6cb7d1f8abfdde2947e6550"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_subject_gap_long_distance-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "72e40ffce91bda0226dc3e2e804c30f17b9fb66b7b8893f19d45428e67841483"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_questions_subject_gap_long_distance-v0-res.json",
+      "bytes": 176,
+      "sha256": "bb5b7d05ace394a338a4f0be42b22a7b5b8982f5c97dc48900075a4d757303a2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_no_gap-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f381581278c8fd77282b36f1e707f1c146e48a2029e0c3304d58e4f51b03f7bd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_no_gap-v0-res.json",
+      "bytes": 134,
+      "sha256": "ea7db03b2876ec965ca172febca4c628fabb83dbf48ec8f2e21a278f00fd51f8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_no_gap_long_distance-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "60110faa6b1cb94c383a433317683f7b4be3ae20f031f31ac3ef936e90b3656d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_no_gap_long_distance-v0-res.json",
+      "bytes": 162,
+      "sha256": "0fd36f73cad1d19cee731b2b940606bb6abfea4f0a2f02e319dd24c3edc9cf86"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_with_gap-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "61b9148ca3b6ab471e8ab2b8f29c61c38d1c7656fd8d871e924c4a0067ecd9fe"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_with_gap-v0-res.json",
+      "bytes": 138,
+      "sha256": "65eb48ab15ed9715b49b0e37431d36d5ca3732891a078c3f448be76f74e080e8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_with_gap_long_distance-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "12416414e80663e21ba9c14c5ce930506ed169a78df4e63b883a62d3fb228e91"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/blimp_wh_vs_that_with_gap_long_distance-v0-res.json",
+      "bytes": 166,
+      "sha256": "be7f8ebe6d4fdf0617f7294a57e54eb1a18a07c5aa9d43ab861db35687098288"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/boolq-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "91faa1900fd75c85d6f8307c0cbf2252bce137727dc852f6a72a60403859379d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/boolq-v0-res.json",
+      "bytes": 112,
+      "sha256": "702bb059c79210c9b847536ed7f8db058ee6752f6a2d3512e187ecbf65625f66"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/boolq-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "5853cb8992c1d62bc08fe591a6153ee5350cc4d76c55656e1543892185c4d7c6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/boolq-v1-res.json",
+      "bytes": 112,
+      "sha256": "a389b0db123a5674406f119fc7c58603efd18856313e0cb0d49aa1d38371933a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cb-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2a4b5467b82b63d922d0d6a4adf7c2945fe35633fc1743730124b5c4e38ad518"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cb-v0-res.json",
+      "bytes": 132,
+      "sha256": "d74e9f768f7869bb1e03211799e22142fc0f85ae2aadd789cc3684c1453cdca2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cb-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "f2ed6c6565438f64dda7ff84f38676f5dc2930e05762c3ac78b43697e1355268"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cb-v1-res.json",
+      "bytes": 132,
+      "sha256": "690f9fdcb69632c0337d4c29241c8c6f9e1e37565b606f7fd6e3fad8962b46a3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cola-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "027dd4767b611a4dba776cac56db07c00715bfc2ded9ea019976dd4b05aa4bff"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cola-v0-res.json",
+      "bytes": 113,
+      "sha256": "5123a510c34a862d61a3d30d201a9eaf75dd1662144f4f8e9c8f7d318ec47b92"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/copa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1f76feab982293b81bf7f8c438c018a4cd3d2fa2c93289fecf6dc8845df51142"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/copa-v0-res.json",
+      "bytes": 97,
+      "sha256": "a42da599710ea6a874755c0148b84a1cb695bacbbe033b184cd96bf855ffb5d5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/coqa-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "85ab45dc616ccb617b25feebec2dbc12c3bdbf96b50ea356783d4c7d0c635fb7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/coqa-v0-res.json",
+      "bytes": 106,
+      "sha256": "4d820846ecd0951f63eadd94a9255d2e4d3cee575aac049d3ca39c1530caa8c2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/coqa-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "977917e6bffef396998d53dc44f560b088aec167fc53f687fe2edad1bae39ac2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/coqa-v1-res.json",
+      "bytes": 106,
+      "sha256": "85aa28e0e1cc1d032872bd8a9322daa86788ae54ab7bf92f4d2cc8a77c962254"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "19701c31af838e490635df9712caddd8d627c1de9506087637304b018ba9ccd8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english-v0-res.json",
+      "bytes": 262,
+      "sha256": "7053a5da4a64447bb517b2763ba07140b51b34352008fec924d4a9504e6ea08b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_age-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "690dd02e6563efb5380817c4596c035203cf8fd70e424d0b9f965641b05d7a1b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_age-v0-res.json",
+      "bytes": 269,
+      "sha256": "10127e9c1f1dbf191a5564ffe24656add062d54aaafdeb55627d11a50125b1e0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_autre-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2a4edca96d9ad2865eeb831195d760fdb891be79973aebcb143af26b55c1712d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_autre-v0-res.json",
+      "bytes": 272,
+      "sha256": "6c507e3b5a9c44957d33a5fdfe3641679fe509cdb39626d187a0e6567c896b1c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_disability-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3badaf9dbdd253a3033136f0d3f3faab3a35e7996cc323ab2c7f6f8aaa6d12b6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_disability-v0-res.json",
+      "bytes": 283,
+      "sha256": "6c392596d5047dedaefae64035f928c3bcfbcff0b2a92ba3111099d0403fb212"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_gender-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "60d37d45cd91440a9c882aa063006d1185075052f72a730999c9423af7f5a398"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_gender-v0-res.json",
+      "bytes": 266,
+      "sha256": "ee77b479e5371d9659fdf6c768ec6da2d0d92a0336ba0b5aaee1db0df28ba61c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_nationality-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0ef0e5cf8ac575d3beecdbed6765a317d714db991cecdd7aa8af94fb69bca123"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_nationality-v0-res.json",
+      "bytes": 285,
+      "sha256": "87a54d1727370e0507f30c1bcdc7833689d8d62ec810ec50292539547025754e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_physical_appearance-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1cec15ad29922a8893c16c2e87cac3d88960e7e2b9e250d025c385568f38f91e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_physical_appearance-v0-res.json",
+      "bytes": 301,
+      "sha256": "f090f05976113e536d5d453abb8c98a7ad09d6024589bc0486e33d0b97df6246"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_race_color-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "4da19ec4f8245a15de992a3087ae4320812930c5c8b6c932bf4fad4fc2584388"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_race_color-v0-res.json",
+      "bytes": 283,
+      "sha256": "0a8fa03dd8843abd39044f8f8d743eda230b21168fc2025fd730cbc9e46456c2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_religion-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3f6859d0da931958ae44653d6ef0f72749f3bf8448f5b7296a4038eeef8364f3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_religion-v0-res.json",
+      "bytes": 281,
+      "sha256": "eedac1498c69e99beff6e802ce4eea7aaf09cf0aafff2a7752c2a291f2b38ab6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_sexual_orientation-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c508b880729eac8214b8fec91945e615140e43d1bdcd8ec29951c4e064cda5a8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_sexual_orientation-v0-res.json",
+      "bytes": 302,
+      "sha256": "16043356fb3e88f8732e77de20710b1d3f55e3e47395cd4a33b28bb963e8237a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_socioeconomic-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "db33dfb4b1a51063e668bc3b2bf8b044d501d8761efff8af4fbb22ae22c8ef63"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_english_socioeconomic-v0-res.json",
+      "bytes": 291,
+      "sha256": "31ff75c695a7d2e5c51436b10aa1ce54ce7ae7d51408645ac7be68619e03cd8c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "39fbf9d929d7e01622529bd3c8c8433b50054f9c48659217a3592495afae9446"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french-v0-res.json",
+      "bytes": 260,
+      "sha256": "cbb18be67da3afb463c1ee983329fd86e9076370cc3b7fd6230db3609ca53841"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_age-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3f0a32a31ba01df065b8d63d61e581207c350e2e35fc554de155a50502f2493b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_age-v0-res.json",
+      "bytes": 268,
+      "sha256": "ecbfcfb20025a1c0b70775c77632827e887e395eda80fdacd9ce43399e47db3f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_autre-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "004b93f2355c973a15ba7012783af89a9d4b2b427c3d66a4d42289a2d2bff3c4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_autre-v0-res.json",
+      "bytes": 271,
+      "sha256": "e8ec16702696332e679af7e89011989a434d66f9c56c0a5383607cafc4f9c2df"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_disability-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "872056239496b67cc80ba0b39efb5eaad8a8633793faa4620c78cc7a34f7508a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_disability-v0-res.json",
+      "bytes": 283,
+      "sha256": "33718aa4f771f674971cd3a09ad3ac29d889dbe428abc790d9f745d52b6b14ab"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_gender-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "8b3571d73c87e53654da021da0c5b5609336851a4261b39880200468900cf6a6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_gender-v0-res.json",
+      "bytes": 274,
+      "sha256": "2d1888c0f374b9d56750d4add1846564a92bc0f549c62d70f60ca57987bf7385"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_nationality-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1b08a79ba337851124bb999361949b4b569fc13c2b6190878d693b1d00951efd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_nationality-v0-res.json",
+      "bytes": 284,
+      "sha256": "0ac6c89ba79a4b403926e9ddc0b54687eaf68d74de6fd0fa9b7323983fee0e6b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_physical_appearance-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7f2d893758c194b1482bebe428c371d500bbfe5e2b73a71ad6fb3d668c524b33"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_physical_appearance-v0-res.json",
+      "bytes": 299,
+      "sha256": "b6304dcdb3bc4eb40ef39528f3beee8d29b08f0c7d8fe44e6fa35e7f124b8209"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_race_color-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7c0fa7cbb5b8ec8b796001a64c687031712a64adfb4eb31215fb3d3ec8df71ac"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_race_color-v0-res.json",
+      "bytes": 283,
+      "sha256": "f87c90356c0dd19e1eb433ba32f598e69dc9ed2cc583c9b3ca7ccf123806610b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_religion-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0572c761d2d7b210a981f825381265f3727007d0dc8809af59096dd8d3879df3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_religion-v0-res.json",
+      "bytes": 280,
+      "sha256": "d117a32a0f8fa08e610f4f46df1cb7c3485f402206318ef389b5b6d833e6cc01"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_sexual_orientation-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "139fe65711380ac613f1f8ec6ac2d4ca2c289d84834f35c646437754b44465ef"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_sexual_orientation-v0-res.json",
+      "bytes": 297,
+      "sha256": "efcab79cb1b2fcc9b847e8b197340ceba064105f9be30e630d38f0f1996bdc1f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_socioeconomic-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "20c9db257f9cd16eee71f9e2fca70fb9f7203bb5725e6b3cdac6119b3bd05876"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/crows_pairs_french_socioeconomic-v0-res.json",
+      "bytes": 287,
+      "sha256": "bd02fc30343a9bd9a5e80527158f2bd9077fc3223b78d28c82c6c69ad4fff1ea"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cycle_letters-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "8d9f14cdca491d4dc3c722504f66a5979e2e9eeba588c653517d1671b4687459"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/cycle_letters-v0-res.json",
+      "bytes": 97,
+      "sha256": "5a6aa3a3c16d2caab784506c511101bee9e72b59bb02fb2f41a13e2febab2a5b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/drop-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "b0fe24e76a2a308adc75c129209c8929a43087d59ea4ca296ac97362c940c27c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/drop-v0-res.json",
+      "bytes": 106,
+      "sha256": "49991fe3955950ff704d4225894e6bea31de73450e6c4889f3f1abd58f077c39"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/drop-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "7bd067f6841f2eff64802038fea8d10ca6cfefc133d15106994e7681da28d1fa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/drop-v1-res.json",
+      "bytes": 106,
+      "sha256": "35ad2080821642700da995901098c9e4cfcc928fb55059f34f48a2e1d398b941"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_cm-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "116e8e9223a84814444ae1400cd020c303b840291c202fccd38707c31cba13b3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_cm-v0-res.json",
+      "bytes": 122,
+      "sha256": "9b4a243d3f97b92b093155c7bb9ef37eba3fdd8d3550b5a2a064876faf52a067"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_deontology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d9b6b0bde2170e910899652dc4e8fa41074c46a30a2989bc1cdeabffa0230a13"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_deontology-v0-res.json",
+      "bytes": 163,
+      "sha256": "1fe8cf915c6cf57fdbd88149ef5c9fa0587c4249cf242f104a52b04efd5ad039"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_justice-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "278e7cd46a38da283970d5022ae2b8b837927be34223e886c2f805f33528a4bf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_justice-v0-res.json",
+      "bytes": 160,
+      "sha256": "b85414a66aec4b4c273126bb6de05121bf18efb5d6ea1582576535da3c8056f5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_utilitarianism-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "47f1c53656b507db4a8a3b86b0a45d99631a9a175d840058c1be2c0aa53a03cf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_utilitarianism-v0-res.json",
+      "bytes": 146,
+      "sha256": "113dc27e336a40aae8b7f4c7baf36eb705e269643fe3ae58afc4fdf00f827167"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_utilitarianism_original-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3f1079224bca05f90c203b32acd2e9005b9e8187c05e8bf8a1867c606f6ed586"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_utilitarianism_original-v0-res.json",
+      "bytes": 163,
+      "sha256": "793f39a76863a287ae95762eb47c33e56b8549b867e8fecfe9f50efce561dd5f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_virtue-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6ed54198c47213e39da1ae2de8b4f0f4e8f21b642770b406d86f388ad662722b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/ethics_virtue-v0-res.json",
+      "bytes": 158,
+      "sha256": "7779d416ad0ab4242e17b03f2c9424b4a070fa324f7726287a039d9ff43077bb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/gsm8k-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "c85cc8704e0f25bce41b11640419b138468d734f98e393060c60c456243039f9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/gsm8k-v0-res.json",
+      "bytes": 81,
+      "sha256": "17974c6efe9cd4a593e883849b0c7aef89061309a979c119c4cb965c44eecd9c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "842c331bafb2fb16d5056900239e8292425d8039ced09312ad25bd9e6d45b631"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa-v0-res.json",
+      "bytes": 187,
+      "sha256": "0c69de9708f76fee981ee2ae955e37ce66ef7ce11316ef5bcbeae30a27dd5e3e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa_en-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c9f98718db5e56f7883c23c54c903157ca5f09bd7f5e7a33a6786161df173dc4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa_en-v0-res.json",
+      "bytes": 195,
+      "sha256": "de0c9605a293fffbc506084e7ae05ca0c00e92d76fe8ca03d8674e92e3d20f38"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa_es-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "842c331bafb2fb16d5056900239e8292425d8039ced09312ad25bd9e6d45b631"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/headqa_es-v0-res.json",
+      "bytes": 193,
+      "sha256": "7d5d5e3ae53b104a1626fe854466eb6e95ee0d3244cdb85b671190b477bd1fa8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hellaswag-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "14c1d77d0c40893771dd0bdf17ac58e7b19dbd37da6c803968a9468e20488558"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hellaswag-v0-res.json",
+      "bytes": 196,
+      "sha256": "61b6de31be2962ce17f8a55a15b400f95a8752de81c496970942689386ebfa1b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-abstract_algebra-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "929143e145ce6af6362a4fa2f89233960b1bc19ef3337aa8432a4a329b3ecc29"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-abstract_algebra-v0-res.json",
+      "bytes": 206,
+      "sha256": "70c5a6164fba0f2f1b0a422a4fbd57c92df766cf7973319f393dfaf67548e29f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-anatomy-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "47f8403202eb066edc739b1453073d5f2a9b6cc957dfbd45893768df5f8fcf31"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-anatomy-v0-res.json",
+      "bytes": 216,
+      "sha256": "f71df4c982b0b3eac72b5eff57448f8d7a909f3bbb7ed5ddc5a82264228ec50a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-astronomy-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5eae6ae0760319f6b7822870740a43b7bcb567f26f71a428dc406a04a49a7713"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-astronomy-v0-res.json",
+      "bytes": 220,
+      "sha256": "40bdd218f7afef8f7688edcdda8c5b849a0cfc6d707456029bdd09447b60e458"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-business_ethics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1a1dd937a8b0466964c12856469f82c08c0c5b6efe797b7dfe88e45eccba61f5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-business_ethics-v0-res.json",
+      "bytes": 206,
+      "sha256": "b7e1cf425c31e24ee34d20b62559b643ef531b4a9fc62c4b65150817725e99e2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-clinical_knowledge-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ab9c8e8a78caa2cbe9276a01402ae95a62e2a61f4acfd7e2fc41a538dcce5e86"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-clinical_knowledge-v0-res.json",
+      "bytes": 241,
+      "sha256": "40b3ab24b27bf3232c32208dbe862c146c6317543671654de94f4cfab6641dde"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_biology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6bd243b47ed2e4eb23b77e104ba40d025cc12bb5f85eba722cfcdd2bc232bb27"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_biology-v0-res.json",
+      "bytes": 233,
+      "sha256": "7ef359df4cb010611170990fea9f029b06763098563fb13687da2bc237cb8f17"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_chemistry-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "060bb4b133b3b441fe3c631d5abca167565decb90c4e90c9b745237657a4a1f5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_chemistry-v0-res.json",
+      "bytes": 208,
+      "sha256": "2516254138cd874498bb20c73cfc06f73f69c365698ec1e7cfaad76df8493a6f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_computer_science-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c78519002e38d5d0c215d284a561eb6ba7d8817ad0da27ab7e9797c82524a288"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_computer_science-v0-res.json",
+      "bytes": 223,
+      "sha256": "b015a0201bff6de6c45be84270d5bc8000b4c84bc40f5d2aa801d62a8105ee3d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_mathematics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "970b146532dabe0e3810f04ff1fd0c67af0ca8978eb37df00f65a47572410916"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_mathematics-v0-res.json",
+      "bytes": 212,
+      "sha256": "dbd0d428c1590c6a426b9eaf458c9d1f6d9a3d9e9f87b2dd867639efa303fc6f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_medicine-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7631b441103290dbdc3c4468f6cefb7d7146a07946a41bbe40471fb568ecf5ad"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_medicine-v0-res.json",
+      "bytes": 234,
+      "sha256": "4c4a74aacf5a6c74260a4f7ed73d27c886f66e2e3a7dad5b0d21ed8fe0e495ef"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_physics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "fefa62dabd5b802e20ff8c936a597376942999ad7a34f6e8dd79d31488bd66f2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-college_physics-v0-res.json",
+      "bytes": 234,
+      "sha256": "93f4d005ae470f1e6a09849adce64a63cec955e3b3249585320a10903d05e8f6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-computer_security-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d9520d48d5220453e9cbc32562ba44128d967a965fa37b466eb88024ce3bf327"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-computer_security-v0-res.json",
+      "bytes": 210,
+      "sha256": "c14bf113f8011ffaca64f2a50ecb4b83886945ce7e31419a59e1b06e3fd7df83"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-conceptual_physics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "3f4ae82d5d6a54e2abba661bb9494efeae9e4ab39994dd3188541279913424b2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-conceptual_physics-v0-res.json",
+      "bytes": 240,
+      "sha256": "f883bc47ed3ace25e2288d650d2ed54bc0df8c3834fddd083f3ca199dcb6408f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-econometrics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "e3b505d9f42ac726c686fd43ec3f28a9c311075784b50db7bf82ca1ce665e93a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-econometrics-v0-res.json",
+      "bytes": 229,
+      "sha256": "d5e95c77f3fb3dc93760ae38d82bd3fffacc9eeb901284922d3d01210b5d7bb9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-electrical_engineering-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d36d9c7a4bde9ac002c15c14d73a641ca780dbf91994f319b39cb68f0ffcd950"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-electrical_engineering-v0-res.json",
+      "bytes": 248,
+      "sha256": "144585e39866b32f9d2c7e992b664e447cc5df6df3347d748b544522cf73568a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-elementary_mathematics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6b406e1512f059fe6c034127439599dbe0765a96d99df2eded25728cbe7247b4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-elementary_mathematics-v0-res.json",
+      "bytes": 248,
+      "sha256": "7c5f48cd55122aa225cd66d249fc929ab9736adced9964929828b54c5d43151f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-formal_logic-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "48fa9c150f1e74fc38fd226a65a2c6efcca1c39cec792b0de588abf2bd34f1f2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-formal_logic-v0-res.json",
+      "bytes": 227,
+      "sha256": "e50cacb2bf9c65c8426ad130844f435915eaa93a0908d4db0aaa0bcb3a7b5feb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-global_facts-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f71e22b34003b1bc0bcf1202a0897f0ab335738e66573028a82f5ee782ba56f9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-global_facts-v0-res.json",
+      "bytes": 198,
+      "sha256": "4d25210804d231802b59f7c6c799dd22f04964b4bea1857af99b34707093b896"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_biology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ce97812a6cbb5fe75722df0a9a3cf18ce293499a555cae9994c15f04d0146b1c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_biology-v0-res.json",
+      "bytes": 243,
+      "sha256": "ea778ddb1e4a54fc16a9ee4295e319220122204a381a6878f5197b95ec7a64fb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_chemistry-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ea36339c122cd91a957bac5e44f7cb53e6362f9866af4c673b4ef003af6bec84"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_chemistry-v0-res.json",
+      "bytes": 246,
+      "sha256": "166403090f941dd094ef2c668fb285d24c8ff07dc6df59a4b8e1be320edff41a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_computer_science-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bcc16d79962baea25891b6ddd67c116f6e3933bf2b715fa0a8c7308aa6ec6d01"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_computer_science-v0-res.json",
+      "bytes": 229,
+      "sha256": "5b319913d822d55447e90fc9369b5d5c45f19371611945d6ed75f4fb26b49c77"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_european_history-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f2374525e98932b53151060654dfb142c70b61c5353834b73071ba6ac6b2dcae"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_european_history-v0-res.json",
+      "bytes": 261,
+      "sha256": "4c975e92ee3839bd5ef80356f163feb97204c25cd70e1563f0998e3c00d9ab5c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_geography-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ed40fe2a9ecc6fa40d2459e375b3f8dcd3b212582d966934c27458c75c7bce17"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_geography-v0-res.json",
+      "bytes": 244,
+      "sha256": "50e007311bf9c65ab625043f5258395d4e48c0fed9637e18e4d17f35a4761af7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_government_and_politics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "92e47aae4e9e3f8ae50a0e10abc864c746062f47b1d51d330321ef90de0e1e16"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_government_and_politics-v0-res.json",
+      "bytes": 275,
+      "sha256": "ce3fd896c5ff6e787f09f41f436d1d1e8a07445025c929725d25a5e82cd56a45"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_macroeconomics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6a26e3ee45470c62075343418bca0b6aabf4161938e8747e91d72c56d93ad7e2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_macroeconomics-v0-res.json",
+      "bytes": 254,
+      "sha256": "d207b03766435424532bc12dab64e88e2bb32a5b3ec5789b23c5b7d6dad5a106"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_mathematics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1c95e6ca1fc560aa7154f5657977739ecc32c33c59bb953bbd233bec94a8e610"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_mathematics-v0-res.json",
+      "bytes": 250,
+      "sha256": "7a137d4296f3b5c2736b1ec7c65b14a7e6a05df8f30226d3a5e4def84cb8b528"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_microeconomics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f77d264998b5115e9549f08087441ca0502787a8697d6c86cd66f29df455c196"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_microeconomics-v0-res.json",
+      "bytes": 258,
+      "sha256": "13e329519bf13ef7200cbc2ea318a74b7c44152eb2256ecbe35a4dce57f040db"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_physics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b4e6fa23d901fe080bdeb28cd7b29be3b05513f75eeab670c93c4de69a77c817"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_physics-v0-res.json",
+      "bytes": 240,
+      "sha256": "a61ca88a0d703ad03311da7e2de6a919fa4f3e30dfceabb39ccded09457d4d0c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_psychology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "13073e8dd436cf5d3d5b3a01ef5c3237b5392b2a81dea16555c9b67a1bb0e5af"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_psychology-v0-res.json",
+      "bytes": 250,
+      "sha256": "2c252178b5aa376a6e8db90293e26bbb6f7dce54c071a7972a7d9e22c83f2919"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_statistics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "192a980b1adb07856fc0ffd7998ac28b7be278b63b84d4023c7231aacefcc1aa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_statistics-v0-res.json",
+      "bytes": 246,
+      "sha256": "3bbb0dfa9e46b2a3eedb37d158d57ac8854ea9f51463869b05552280ad5f5166"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_us_history-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2de702fa40a5d5e9e3c24770572f3d1c67e0b1982d094a6bfc4a41cdb231ba55"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_us_history-v0-res.json",
+      "bytes": 248,
+      "sha256": "f80646b4ba438b7c6b79727a081f98b3ffe6ab5561dc92d891b7976965a01202"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_world_history-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a677c9c11ca7f8e941ae93b43b1d1422907add3a8a25edf69a0fbfc9cd4d01ff"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-high_school_world_history-v0-res.json",
+      "bytes": 255,
+      "sha256": "f4caf155d2aca71940bc6edffcfe22031b9c325544b6d5ddba8acff82e81776e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-human_aging-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ede4fba12eef265b13da15d868e30b3cf31ddb0ab22d11880f6abcb9c98b50b0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-human_aging-v0-res.json",
+      "bytes": 227,
+      "sha256": "6a2bfede61c91071f08955a10946052b7792c4aea7964cb78a56a51dee51092b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-human_sexuality-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f6e45a15047b26cbfd837b4e47377c573adefb9f11cb4e0712f51ffacbebd2af"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-human_sexuality-v0-res.json",
+      "bytes": 234,
+      "sha256": "e229e8ece0818bc692775e7145d5e6f6d7e68f08d66224b4ed3ef698e9ca5b57"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-international_law-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "92234079bda7d094e96dfbc7f2a00168526c5e3d346cbbabee990b923298eda5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-international_law-v0-res.json",
+      "bytes": 237,
+      "sha256": "d4c7cad0c734c8c3849b0cb2a60594853c8a3dd7f22a93432b0f754335037e6f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-jurisprudence-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ce0de42dfa47ff27bf867cde37a7bde7fcddbfd584bb407ceff1e35440cb5d12"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-jurisprudence-v0-res.json",
+      "bytes": 214,
+      "sha256": "5cec3cb059e0b2b9f906d2005dcca4fcdbbd1125371a213958f79152fbde286d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-logical_fallacies-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ec6db22970ac755de56e1d8a987340a89a1681d02a7f4eac7214322bbb062d78"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-logical_fallacies-v0-res.json",
+      "bytes": 237,
+      "sha256": "302a51b5b12ef4a83d5b2e1464a70e96d13711da4b8b13914b7e35ad845b71f3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-machine_learning-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "40232a4a0a03b2bbccdc281e0f8e49b73d4965f66b6ccee47968ca22b99696e5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-machine_learning-v0-res.json",
+      "bytes": 237,
+      "sha256": "7f327b93a2c8514d8de6cb537fdd55a427a218fef40e444871d783ce7658fddf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-management-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9a66833e27b4720e9d222b75640a09eea96d9c3e4aec54c5951fd0c2a528568a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-management-v0-res.json",
+      "bytes": 224,
+      "sha256": "4a8359096ee2f1c36104643ac6d395331469c65ed1cd3e2e3a0c2ec7a7223fa2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-marketing-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "8029b6d7bc734f9c087797fbde2b265ba74a21226c35c9df5641cbbdf6af8605"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-marketing-v0-res.json",
+      "bytes": 222,
+      "sha256": "6c6cee8c14e399dc31abe38f89dc4b80aafbd4373e10f301e8338f5ce14884de"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-medical_genetics-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "28dda5859a9bb5acbd03026c49982d748e3d96062ef33c39ecd0dedde2de9b7d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-medical_genetics-v0-res.json",
+      "bytes": 205,
+      "sha256": "5a41d73bed4cd0de311e8b66781b94cbe84fc48f8408e80811bf2310e889e947"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-miscellaneous-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "2337a540b2861243f2c14dbc0d1fd7965a18735a8af52211398a4159591f723d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-miscellaneous-v0-res.json",
+      "bytes": 231,
+      "sha256": "4902ed4e565e6d36facb66043db0c65fc6baf567c1e4584ecc46899082188480"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-moral_disputes-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7e6759d6617758515600ac26634464377f1408d6ed396fe495167c98c0ae9478"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-moral_disputes-v0-res.json",
+      "bytes": 234,
+      "sha256": "dacc5a6263ddc8f35ea453c39c42c25fe16d58143e7265c79f2c61f85c5a2795"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-moral_scenarios-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1b8389b869a480619e3568c12f0a2058b7cf211e5e974173b484967edc086591"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-moral_scenarios-v0-res.json",
+      "bytes": 235,
+      "sha256": "d3c88041523f0b7ed73a71605fa25205d994d16c8015c1747d728ac5dcf2d010"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-nutrition-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1baadbcb854b64497b9d990ff47f51db423c25eaf403fb7fb683bd75d559f11e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-nutrition-v0-res.json",
+      "bytes": 223,
+      "sha256": "8d01627a155d7352c5ffb1928463bfac6bcd01e916db02f565aaa9e92f3ef3ec"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-philosophy-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bbc1726c40f4b60772406b6795276388b64afbd87c3255c4b87bb4da9320432f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-philosophy-v0-res.json",
+      "bytes": 223,
+      "sha256": "1d1961476c0ee6ce270551ad2c1094fb5f25d465ed7a866b001c9fb7124e1705"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-prehistory-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f6540625104caf96fbabe5a793b698717d52ad41a242598bc8eef4d9f750c9ce"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-prehistory-v0-res.json",
+      "bytes": 224,
+      "sha256": "f16ef3f529e8f02acf0063650719caf153627868d30dd193b2ba12a0648e6ec9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_accounting-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0035659f5215fe05929a4ebfe0d097e52eff1ca1611edb91c6418f96305c6f68"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_accounting-v0-res.json",
+      "bytes": 251,
+      "sha256": "73c82e752b183701a9838645ff4efe7ffb496efc5b75c0d5d46f65e87e52f1cc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_law-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9cf09f5871691aef0f6c5b154e4dcfd421c4138aaa11fbac0085cb257f61f48b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_law-v0-res.json",
+      "bytes": 236,
+      "sha256": "5f808e2f8af9c9abd7cfb0e5887b7826fa68b1f48066a70ff775b85c9f1b3746"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_medicine-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "e3644912d0df39abe24e4bcd87540f17228f523ad7451464ee2806750d55768a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_medicine-v0-res.json",
+      "bytes": 246,
+      "sha256": "cfc2dbd45e582cef3f705bd2dc847c8f0cb82b80a3696480211b35bb3616f6e0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_psychology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d7fbe36cd5aadac5d1dcca70f6f66d057c8f5337a7f2764af8fafa9504d7fdd6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-professional_psychology-v0-res.json",
+      "bytes": 249,
+      "sha256": "6d5581148ef522c356686b066c0777133e29b6085d463d70838c466b543aff55"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-public_relations-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f4709198ad6f8872b04fb20893d7efe892cedb6070f56b22673647d7c32bab98"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-public_relations-v0-res.json",
+      "bytes": 235,
+      "sha256": "af8723019b13936f0c777fc46f11370506b7b084898caeb9f29ae6e6100f1045"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-security_studies-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ad107f0b63bf9b0351ac2d105dd92b43a2efb1572aa9b3029fe3831738ad518a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-security_studies-v0-res.json",
+      "bytes": 235,
+      "sha256": "cd4436040ea2b09ac6b9ee44f207bd75e1727cfed0bd055d93db203fad370f8a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-sociology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "660f6ded101dabd480275ce0d29c096759caaff9de4e2aa6b4790a5cd462d0ed"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-sociology-v0-res.json",
+      "bytes": 223,
+      "sha256": "c7ce2129bdede45cd5ee779c30774ff5e41ae2122659c163718faa784bdea35f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-us_foreign_policy-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "57d41ca50fde37e7df57f69c89dafd198a22fb13f55e739df5548f95e1946f18"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-us_foreign_policy-v0-res.json",
+      "bytes": 208,
+      "sha256": "b32f5cf495b6622f59f7e9044f5e37ddd0ae82a5bb6edfab9dfda4162fb75500"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-virology-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ba148180d74158fd6d6e66bc4c1230818a2f44660eb817003d88d02543f3881d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-virology-v0-res.json",
+      "bytes": 220,
+      "sha256": "553135518543a06de31227a662e44716d6740d590e5237e0ab8b4ab1c5461831"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-world_religions-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a7ddb87eea337b42acf416bfe569b088e2b52e8a7f9da8fb4d55940ba08d78a8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/hendrycksTest-world_religions-v0-res.json",
+      "bytes": 234,
+      "sha256": "2b268a41c77505a9586e731cbb6381e73f4085d2319953b5f81c6e83ea4415f1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/iwslt17-ar-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "83a8d9733cfd2e70a80490363b4d1ecfcc4fd7e4c022b6bd3bb119c69b7ddda5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/iwslt17-ar-en-v0-res.json",
+      "bytes": 198,
+      "sha256": "b4e291337027ab52abebdfc1ecf55b88708ef4fdda7be44340f3582f62e4e2b5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/iwslt17-en-ar-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "577e343b1d37db1bed3928e8b197c5b1e4afdb9c3d7bc07082852d9a9ec643ae"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/iwslt17-en-ar-v0-res.json",
+      "bytes": 163,
+      "sha256": "574b3d9c47fa2326e2e2e6c2cf4cd9ccb4b95d8aa34d48c916be582e23035810"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "608f415d98e5266fe5d190a2da1023ae0251357daaf3e57c11e495ad9f65c4c8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada-v0-res.json",
+      "bytes": 148,
+      "sha256": "7306553467558c21e46e6fcbc3c1303f52dfb44f3f6f2bd68b4e378999d1f9de"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_cloze-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b29df4a1a87e23e1392db119d1b01761d2f7681500128cadc83835eb8870feba"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_cloze-v0-res.json",
+      "bytes": 160,
+      "sha256": "8ed2841d775731ef1ccd4e69f9667e5dd2f78472aef56dca752b79e34896ec27"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_de-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "acf3dcedda158cffcc50a4f0e429e688ca591893cf21a17ba004d6f6867321d6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_de-v0-res.json",
+      "bytes": 160,
+      "sha256": "e0277bc0dce4c2f1949a2415f00a15bd56f999b2cf9a25f90ea8d8a47113bb38"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_en-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "608f415d98e5266fe5d190a2da1023ae0251357daaf3e57c11e495ad9f65c4c8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_en-v0-res.json",
+      "bytes": 160,
+      "sha256": "6dc54032f2220439cc1c99ce02b1b2265cd7d60f7c3bbeea2aea36db5813c370"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_es-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1886f5b381a7a8d7babd1fd65b252b10667770522fcc3cf8c4f2c65ab8f1826e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_es-v0-res.json",
+      "bytes": 160,
+      "sha256": "fd71c01f572f0f0cdae76a3a5fa787a04a3b5ed81af6e50972fc49451840ee48"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_fr-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "db3ee23ca5608c5eb61e47079a2da83e3a800230e48974540474a8dbacbc4cc4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_fr-v0-res.json",
+      "bytes": 160,
+      "sha256": "0c6a893a98b777965be48a9065e9574de611c9320ff6df9126048e3b2c1582c1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_it-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bde1de4b4f9305043d2867c8be03e7f353facbd8886482996c375d4d27661e63"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_mt_it-v0-res.json",
+      "bytes": 160,
+      "sha256": "cf9d712ae8e8a8433fe6aa9c8172c1ca734a7f2e0b58022eefbd85d02b269236"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "608f415d98e5266fe5d190a2da1023ae0251357daaf3e57c11e495ad9f65c4c8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai-v0-res.json",
+      "bytes": 162,
+      "sha256": "77de8d3154788c38730c15c4e652500e629a753995866c716fc12b7666e9c01c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai-v2.0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bd43afb71795b729b0f40df8182b0d97e3fc750111efd2b08ec8225be0f5b349"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai-v2.0-res.json",
+      "bytes": 166,
+      "sha256": "df837e747b4b523c46e31dd4abb2132bff24490249a6fb40963193a118076d7a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_10_hf_pretrained-EleutherAI-pythia-14m-dtype-float32-device-cpu.txt",
+      "bytes": 301,
+      "sha256": "b800a802b0102913d972efcb6874ecf4b1e761ae35c6c989db8181bd1e35a113"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_cloze-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b29df4a1a87e23e1392db119d1b01761d2f7681500128cadc83835eb8870feba"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_cloze-v0-res.json",
+      "bytes": 174,
+      "sha256": "6d5d0c97cd7f25c20b92ca46a6ba1346f5835d6f79cc8048d610bc053e44ad1c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_de-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "acf3dcedda158cffcc50a4f0e429e688ca591893cf21a17ba004d6f6867321d6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_de-v0-res.json",
+      "bytes": 174,
+      "sha256": "52e2dc3799ada8406d0018845684e6638d23fe458b15b91ec8ff30decb975784"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_en-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "608f415d98e5266fe5d190a2da1023ae0251357daaf3e57c11e495ad9f65c4c8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_en-v0-res.json",
+      "bytes": 174,
+      "sha256": "eef4d9252f0daf858b3db9e510e1f1be6ac43279833858a0485206dbdd1dd259"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_es-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1886f5b381a7a8d7babd1fd65b252b10667770522fcc3cf8c4f2c65ab8f1826e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_es-v0-res.json",
+      "bytes": 174,
+      "sha256": "8ce115d04fc6e2f995da37b03373b4a9e6dd91c826ef3b1f855d25e62e2bd51a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_fr-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "db3ee23ca5608c5eb61e47079a2da83e3a800230e48974540474a8dbacbc4cc4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_fr-v0-res.json",
+      "bytes": 174,
+      "sha256": "e31f46a1e46d0ef5ce04e035cf32887d2df64752844268b8b173ad849c479017"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_it-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bde1de4b4f9305043d2867c8be03e7f353facbd8886482996c375d4d27661e63"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_openai_mt_it-v0-res.json",
+      "bytes": 174,
+      "sha256": "ffb1393e307347cde8f18743fedd696350beca0a6749030a7f776e4729e2c3e2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_standard-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "e70470bcfeeadcee5baaf9a3549253680bd641d68edd7037091b242c2a41021a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_standard-v0-res.json",
+      "bytes": 166,
+      "sha256": "64a950e4af28000301ca3d9984f3b72501c8020a787f7098d72d7661ab3fb5e3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_standard_cloze-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5fdcf1eb069f2fdf034a020dbeadca192223392fefd8aaf8b8c23133181b7fe8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/lambada_standard_cloze-v0-res.json",
+      "bytes": 178,
+      "sha256": "469a06a2fb6900c4378a455d94687b634ed786e55d61adb0f52d507c76183f7d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/logiqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d72dbc5794567455b27b14773d55f2b44705981310ce26ba70fbe5bd9f9874f0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/logiqa-v0-res.json",
+      "bytes": 189,
+      "sha256": "453e5f40bf21174f37588244e5a94f552f18cf7c949824184257e69a0be4138c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_algebra-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "4e60a08e70c401b56311c404375328819c6b8686d92ef9bc14b40bdbd88f3e7d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_algebra-v0-res.json",
+      "bytes": 95,
+      "sha256": "5dc8b639033b1c0bbaf615c8fbbd072af897364c5c7e0b3ce7e14273e5792f25"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_algebra-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "4e60a08e70c401b56311c404375328819c6b8686d92ef9bc14b40bdbd88f3e7d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_algebra-v1-res.json",
+      "bytes": 95,
+      "sha256": "d556b9ab99d0ecfacc4cb85b7faad0397db3fa928f45c472abb0508a92a14a24"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_counting_and_prob-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "513a14904944ce2aa7f5ad74dc0524cdd3610becf712a905414fa7d9209c7456"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_counting_and_prob-v0-res.json",
+      "bytes": 115,
+      "sha256": "ea7376a9d144458c084b7dc5b4a126b95ee46f274e725133790c4c4187aa8fea"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_counting_and_prob-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "513a14904944ce2aa7f5ad74dc0524cdd3610becf712a905414fa7d9209c7456"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_counting_and_prob-v1-res.json",
+      "bytes": 115,
+      "sha256": "6fe319e99f46ff9e5cae769922dd9815235da8c5f8f4214f74765534c3d97c17"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_geometry-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "19c2a10b17ad444585294320674479cd2365df6a576d6769586e34bc4a417c89"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_geometry-v0-res.json",
+      "bytes": 97,
+      "sha256": "50d448db678fe5670847f0a8f7522f9f068602d5823edb782a5257d132e79c72"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_geometry-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "19c2a10b17ad444585294320674479cd2365df6a576d6769586e34bc4a417c89"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_geometry-v1-res.json",
+      "bytes": 97,
+      "sha256": "97a94fd821dd51b31c502820aaf99d54a8184ce5cfc6b37d97e117b044491a3e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_intermediate_algebra-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "8709620aa35e45a9576f7ac1c8e0d6ae0c969bdc2b8936c48a802a0718a01860"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_intermediate_algebra-v0-res.json",
+      "bytes": 121,
+      "sha256": "368ab69f67e1666305164d6023ce6e3c02c9f1aced38e4cd03e2555f5f5b6d34"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_intermediate_algebra-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "8709620aa35e45a9576f7ac1c8e0d6ae0c969bdc2b8936c48a802a0718a01860"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_intermediate_algebra-v1-res.json",
+      "bytes": 121,
+      "sha256": "069dc3144bbad3bc8be8719836db504862da0870b6f5405cd0ec352feea922e3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_num_theory-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "34a590cf24e66d38fee5b64075d7d5d51bcd7f1d0c27e8c721e83df319227842"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_num_theory-v0-res.json",
+      "bytes": 101,
+      "sha256": "49a0d29e70db9bcbc5e4ebe4d8a515a7f36c9d5775e0874657867c14711f997c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_num_theory-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "34a590cf24e66d38fee5b64075d7d5d51bcd7f1d0c27e8c721e83df319227842"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_num_theory-v1-res.json",
+      "bytes": 101,
+      "sha256": "a6dffa7e1c2dd37384ec6dc6d71512daf34d653bc9516b0be564fccaea8664b8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_prealgebra-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "8af25e62e99fa062c76d1b5c43bbac749dd3619f7d3641139858d647909ff247"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_prealgebra-v0-res.json",
+      "bytes": 101,
+      "sha256": "8dec354825ecd5aa863ec29116d4536872b2e0c8458eb5ad61159951ae53fb0e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_prealgebra-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "8af25e62e99fa062c76d1b5c43bbac749dd3619f7d3641139858d647909ff247"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_prealgebra-v1-res.json",
+      "bytes": 101,
+      "sha256": "9d73b6886047ccbd380d3af5873b47a82311f546b257c1ce9be7efc4b07b6bb8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_precalc-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "5f131b8a443153e46d33378708466f04763532b986a462e60c82bd9601b9a108"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_precalc-v0-res.json",
+      "bytes": 95,
+      "sha256": "a0cbf680adb8c34e611f7277c74c83e471198903338f0d941d32fcfe8e59f50e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_precalc-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "5f131b8a443153e46d33378708466f04763532b986a462e60c82bd9601b9a108"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/math_precalc-v1-res.json",
+      "bytes": 95,
+      "sha256": "eebb64af3fbef65fda239e96189ef09cf4617a6d60952b61c447bfc5f8e207a2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mathqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f8abc4b555a21dbb662956482f8c53d4580a01aa122a5c7e242da4cc1faecbe1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mathqa-v0-res.json",
+      "bytes": 189,
+      "sha256": "ab5c0cc5431567edf437a2fdd16c84cc5020aa32118a2f0b16c9d6826334a41e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mc_taco-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "07774ea71d0338d9e109d4938581970a424991e97e08272daeb31cad2c91dc91"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mc_taco-v0-res.json",
+      "bytes": 108,
+      "sha256": "5952668de9a23dfb6243bedf707d63151cd5c313cb2f02530a4556e5711c065c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mmlu_stem_10_hf_pretrained-EleutherAI-pythia-14m-dtype-float32-device-cpu.txt",
+      "bytes": 1929,
+      "sha256": "26afd515172a1c8a7e1fac83928ad15ab814d1ba4bab363865c0d1644b75dfc4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mnli-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a891851c62ab9c70f0d1684b9431072336f50d9c644e29e2a224c13ed1bf02d2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mnli-v0-res.json",
+      "bytes": 112,
+      "sha256": "a58c2508ef91c78b57ae4e54c3cd7b2569c72c8a55053331e02d97d101ac1fe2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mnli_mismatched-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "e396e3cece36f94b1ab3b82c1264bcc9445b23f0c23da84972279ca4961f00ae"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mnli_mismatched-v0-res.json",
+      "bytes": 133,
+      "sha256": "718637a175809c1d578342212c5a361089c0ab3ae4b97a28fa5e28046cd95cff"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mrpc-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "87e9badf19fe024bf1733e82f2ee5931304edd7fcb3794571d934aa8e130017a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mrpc-v0-res.json",
+      "bytes": 172,
+      "sha256": "cc636fe4e03c8eb5a185ad21c27a07b6ba4f690d600dd2fdbbf31780fad86f46"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/multirc-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c43efe772f13632d148259dd02dd6f36b309043878d9934b0602f0d7efce1d3a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/multirc-v0-res.json",
+      "bytes": 118,
+      "sha256": "4589f9a953be76995c4d88ba8b91c82e88d1f3d6c30955f854e6f8ed3a46bf6e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/multirc-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "dcfa7f9c91dd9af7cb504337f06d9ea2c028cae565978520023ef8b86376615e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/multirc-v1-res.json",
+      "bytes": 119,
+      "sha256": "e8b73b985183da876730cd6384ee8e63717536a2727df292c2110273f440493b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a78d622e70cd5373d182329d5b7aba11b9799696c67cf9666deb7d93552997a3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual-v0-res.json",
+      "bytes": 242,
+      "sha256": "03d498d1389ff5efad55b2f037e5cc0efc6c15209470b1431f7aadca1b205846"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "a78d622e70cd5373d182329d5b7aba11b9799696c67cf9666deb7d93552997a3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual-v1-res.json",
+      "bytes": 242,
+      "sha256": "e83626ac1ca9a071af0313c41390f7be2a41b052784bf89672069b0ea7aba126"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual_plus-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "bf759b938a50757fe6ad7fee6897e514f9d101306379332a01c4a514a5b6ccd2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual_plus-v0-res.json",
+      "bytes": 248,
+      "sha256": "1d38fda3825fecc69e9f9afbc1b450fadda3b6c57d61aee237a07f882607da76"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual_plus-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "bf759b938a50757fe6ad7fee6897e514f9d101306379332a01c4a514a5b6ccd2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/mutual_plus-v1-res.json",
+      "bytes": 235,
+      "sha256": "dbc49f88b70a5e1fc35b108c99fd99ea1b7a0ef3fe5f3040f314207f6b994fd4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/openbookqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "a8114887380cb61e2d5c9ca9d50867724af49d4f94f634b61fc437363d7bf252"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/openbookqa-v0-res.json",
+      "bytes": 170,
+      "sha256": "8f598cb314f6d16168a5963e74bec6430cdf6ccaed8188cd07a016d5f60feb7e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_arxiv-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "6085a4d828df0d69d802272e98ed04b2d4ec8ab1bac417b0341e6a1d8d9cb6b7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_arxiv-v0-res.json",
+      "bytes": 179,
+      "sha256": "90a0f7c2e9e37be69708964532ede4f949531bd79f624a45458d76e6622819c0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_arxiv-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "6085a4d828df0d69d802272e98ed04b2d4ec8ab1bac417b0341e6a1d8d9cb6b7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_arxiv-v1-res.json",
+      "bytes": 177,
+      "sha256": "bd9d4f8b7c44b68d6e659cdca45a0526e50beffed97fce1d5175a6331c7ba470"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_bookcorpus2-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "f6078f6b00550f0c5718dcad909521de1a05a6ece75eae4c35c6494151865bf3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_bookcorpus2-v0-res.json",
+      "bytes": 190,
+      "sha256": "57a4eaea8fe22149c53be5f686fe069cf4bcf2ebd66f0ac5fa10e4746de1e5f0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_bookcorpus2-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "f6078f6b00550f0c5718dcad909521de1a05a6ece75eae4c35c6494151865bf3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_bookcorpus2-v1-res.json",
+      "bytes": 190,
+      "sha256": "29d1d4e9a1e6e871448841f98d068dae54d09a4dcb1e51087acc9017c415b2d3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_books3-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "9cb6aa18a38a36c494ca2196ae9fca66d896c22443ea096443480db251d2f6f7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_books3-v0-res.json",
+      "bytes": 180,
+      "sha256": "a73bad7918bf13f536f6248ca83b6ae319949e491a3041f0d182ca6d799b02fc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_books3-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "9cb6aa18a38a36c494ca2196ae9fca66d896c22443ea096443480db251d2f6f7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_books3-v1-res.json",
+      "bytes": 181,
+      "sha256": "f2f6c6f3ba165a70d91f29d3d74a5cf0c0e9a61d6db568c61155095fbbc75d35"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_dm-mathematics-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "adf0890d1ad26cd3f2f0f74b778fc0a71421def55b3ee7fa438469951ce4abc0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_dm-mathematics-v0-res.json",
+      "bytes": 196,
+      "sha256": "12bc01a4c4529749ce5ea6817a4cdaae7e37e1f1d92f3f546e75161042e64c41"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_dm-mathematics-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "adf0890d1ad26cd3f2f0f74b778fc0a71421def55b3ee7fa438469951ce4abc0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_dm-mathematics-v1-res.json",
+      "bytes": 196,
+      "sha256": "02ce45b1f14a746bec0c48feb79cf2394ef3071693b405f9ffa7de43d8045ce8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_enron-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "4c9bbb671e00c74475fe646c7142869b97db0c6e97f339d6d15fec477a9ff661"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_enron-v0-res.json",
+      "bytes": 175,
+      "sha256": "a46c8116bf354387c99f8ff89a6c721d01996b352635451350f24da51aa47077"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_enron-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "4c9bbb671e00c74475fe646c7142869b97db0c6e97f339d6d15fec477a9ff661"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_enron-v1-res.json",
+      "bytes": 175,
+      "sha256": "fbf20facf3ce0535cede2ed54ea1de09b78041d93b8d3d289aec540e57ca23f2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_europarl-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "dc0e69a89e361c76403f73c9f1752047f2c5b47b5544e67af89684c5338a743a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_europarl-v0-res.json",
+      "bytes": 182,
+      "sha256": "70ac6b74b937388e19f34147fcd2b46c2886d5623e4030818c99db375a1e4d51"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_europarl-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "dc0e69a89e361c76403f73c9f1752047f2c5b47b5544e67af89684c5338a743a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_europarl-v1-res.json",
+      "bytes": 183,
+      "sha256": "2b8041d4f5cedb0db8c24deb65c4812e9c0a2906564d5908f8cdbf87886f57e0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_freelaw-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "e5b1ac83afe093f4f07f4c7e549874c47dd55cb0ddc57cacf7dc694201219054"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_freelaw-v0-res.json",
+      "bytes": 180,
+      "sha256": "e0ebd3a7e5ccec761e939ea96863736a2c7abe4aef4f4f19908fb8917d15c8c0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_freelaw-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "e5b1ac83afe093f4f07f4c7e549874c47dd55cb0ddc57cacf7dc694201219054"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_freelaw-v1-res.json",
+      "bytes": 182,
+      "sha256": "4452bd7b42745f0a8570ea824c1902daae9ef4d4cb4376ae19c33a734959fe66"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_github-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "94d7032a74694728e0430acf9c1310647ab104cbca9760f27489382b5ee44ea3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_github-v0-res.json",
+      "bytes": 180,
+      "sha256": "ec8ee41db017a3d348101d191e28cdc4a0a6931bf8b7fad695c448a67f016737"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_github-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "94d7032a74694728e0430acf9c1310647ab104cbca9760f27489382b5ee44ea3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_github-v1-res.json",
+      "bytes": 181,
+      "sha256": "d7e19ca5286e5607f178e1963b5af2b5082bb937df75e2df4b7155a7b4e13afc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_gutenberg-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "8b8cabfb763b92de87f27a3a4f0ed2f8b8d5128bba977b304dc99be0292e9168"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_gutenberg-v0-res.json",
+      "bytes": 187,
+      "sha256": "f8c3a130fea70a82e9c6460c74f8f6f0b715c16e0efe6ba818cb7bcc1b796ede"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_gutenberg-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "8b8cabfb763b92de87f27a3a4f0ed2f8b8d5128bba977b304dc99be0292e9168"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_gutenberg-v1-res.json",
+      "bytes": 187,
+      "sha256": "89a1bea8e7654cab5a4b55df5715e2be864c7a80503b43be42b5de9b490811bb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_hackernews-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "b09cbc5c472097437f4049c73627e704dfe1f2f198d3781ec8c21ae2541f9b52"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_hackernews-v0-res.json",
+      "bytes": 189,
+      "sha256": "22b2d8f32fe241c06f04c21c3b68dc7aee41af76e26a2dddf3cd47c2ebd7caa2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_hackernews-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "b09cbc5c472097437f4049c73627e704dfe1f2f198d3781ec8c21ae2541f9b52"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_hackernews-v1-res.json",
+      "bytes": 189,
+      "sha256": "b2ca394617e1ef271dcd94bf4f28f116e433e464e811c4b5c486c1de813a2a3a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_nih-exporter-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "75a80e387b077862a30a2092d7ba661a68c82a58a17d9d0553aa89cefd4803d5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_nih-exporter-v0-res.json",
+      "bytes": 193,
+      "sha256": "57c032b0f679fb311b19b24b86363a8c408631417ab28b50b086e19e0247c343"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_nih-exporter-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "75a80e387b077862a30a2092d7ba661a68c82a58a17d9d0553aa89cefd4803d5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_nih-exporter-v1-res.json",
+      "bytes": 193,
+      "sha256": "b769d3734b19a5c791ee4a624af05c6159968f80c1795ae491f7376563676f3a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_opensubtitles-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "3633dc9a78fab70236e56f8aed9c6c662d94ab690658cc5f0927a699d53a5ce9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_opensubtitles-v0-res.json",
+      "bytes": 195,
+      "sha256": "452afdb52346e4bf64de63aae2c9b391af451a551eac144858966412708cf3d3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_opensubtitles-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "3633dc9a78fab70236e56f8aed9c6c662d94ab690658cc5f0927a699d53a5ce9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_opensubtitles-v1-res.json",
+      "bytes": 195,
+      "sha256": "340260f7d4401e541ccb2ae3c01d5143270adcb649231ead27e20a9028078b35"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_openwebtext2-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "11cb7e6b3c343e39ab91b475adf5efcbef3e2477c4b91627edcc320e1be7015e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_openwebtext2-v0-res.json",
+      "bytes": 192,
+      "sha256": "7dd110c3dae664ad26bf456cb139a44cb86455b772fe625f53e814943568415e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_openwebtext2-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "11cb7e6b3c343e39ab91b475adf5efcbef3e2477c4b91627edcc320e1be7015e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_openwebtext2-v1-res.json",
+      "bytes": 190,
+      "sha256": "f258c20f4c381f48aa840bfb7558c5f9cdc87133c76ac4127092cb38de9b8b94"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_philpapers-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "a57a1f149937b974d9abb1f1dcec8ee043cdc3d6f49749ca5ff52da7a56d66f3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_philpapers-v0-res.json",
+      "bytes": 188,
+      "sha256": "009b1dceab8db80e5d6dd7f3a324b2bcd67fbe9564f340b97b400e27d7022bb9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_philpapers-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "a57a1f149937b974d9abb1f1dcec8ee043cdc3d6f49749ca5ff52da7a56d66f3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_philpapers-v1-res.json",
+      "bytes": 188,
+      "sha256": "6599522cf994f7e799590a4ff0891e91c320694badcac5f249e83461dd3fa47f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pile-cc-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "76af7f6223b9e623557ff1b325e537af8c4f36f4cf50f9b0a8e02a2b7984703b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pile-cc-v0-res.json",
+      "bytes": 183,
+      "sha256": "a75cc98b5047c63b09634fcf6e7a5a6edf08d2a851a28656a87cda1b59c8c23f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pile-cc-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "76af7f6223b9e623557ff1b325e537af8c4f36f4cf50f9b0a8e02a2b7984703b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pile-cc-v1-res.json",
+      "bytes": 182,
+      "sha256": "7a4efc16c0325857240189bbff909181b5b402bbbe6515fd71f314e2c9058f2f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-abstracts-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "0aff0ec20565524c217688a99064016fde533351668980ecb2ce3eb086d6088c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-abstracts-v0-res.json",
+      "bytes": 198,
+      "sha256": "f7f8c846c376a2a59093317a70e73788f337886581718b7a102eaf6d79341765"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-abstracts-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "0aff0ec20565524c217688a99064016fde533351668980ecb2ce3eb086d6088c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-abstracts-v1-res.json",
+      "bytes": 197,
+      "sha256": "2498333e89ff7a8dd5e3d2541dca86e7c11e0e82cb53fe773168abf1c145dace"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-central-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "33e46ddd7b1c649847f15f94edc0a70f76e9e9f55734446bdb8de9a69f4c3d9a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-central-v0-res.json",
+      "bytes": 196,
+      "sha256": "74a73be3ebe26deba1c4fa1b5d7bd527a0f957947f74bfa7ebacd4c0c69dcdf9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-central-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "33e46ddd7b1c649847f15f94edc0a70f76e9e9f55734446bdb8de9a69f4c3d9a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_pubmed-central-v1-res.json",
+      "bytes": 196,
+      "sha256": "7449974e8a9acc02a72e39f0e24b16199d009dfc571f260e1ce5e8a361442445"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_stackexchange-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "32e74a9795f46ee8296bbe5c696098fde4f87a620ca965a3426055aaaed6ced0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_stackexchange-v0-res.json",
+      "bytes": 194,
+      "sha256": "73224d413fe68a7320d0aeb7741866508d6595165514283890f07fdaff8ab848"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_stackexchange-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "32e74a9795f46ee8296bbe5c696098fde4f87a620ca965a3426055aaaed6ced0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_stackexchange-v1-res.json",
+      "bytes": 194,
+      "sha256": "cb65518443502fc1e0253c9807fc587482d5579841d2e5cd170bd40e5a7c8882"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_ubuntu-irc-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "7af4855af001e41de2e3bf387e5d8f6d080ac13acfcc0d380a5c45eb857c4046"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_ubuntu-irc-v0-res.json",
+      "bytes": 189,
+      "sha256": "26d73c782d84d9303d484311442e5915a4c76eefd4af60b7cf3a2bd4a085f963"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_ubuntu-irc-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "7af4855af001e41de2e3bf387e5d8f6d080ac13acfcc0d380a5c45eb857c4046"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_ubuntu-irc-v1-res.json",
+      "bytes": 189,
+      "sha256": "cf3042a97e20d8feb48b58176ffc56700802c3733e6fe50a21e9bb3cc1205355"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_uspto-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "ae2540359a43efb95cd43523664d6b1e6bd097534f2173720a88732424870c12"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_uspto-v0-res.json",
+      "bytes": 177,
+      "sha256": "e27dbfaaddffee5baae5562a07df03b8fbc71fe44950a53f5e58c9c43f82eff2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_uspto-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "ae2540359a43efb95cd43523664d6b1e6bd097534f2173720a88732424870c12"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_uspto-v1-res.json",
+      "bytes": 175,
+      "sha256": "ab7b45edbee7c16231d1469c43a6043746c61de512b73789b85fd00dd87c0250"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_wikipedia-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "4a1e2f4d398e3cf4235c3591c3b3bc722c9f03591db26d0c3289c97c20ca4849"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_wikipedia-v0-res.json",
+      "bytes": 186,
+      "sha256": "adc394e3de03f9d790520ad1064385bb33e65b32fa18376bf50204a21bfc87c3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_wikipedia-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "4a1e2f4d398e3cf4235c3591c3b3bc722c9f03591db26d0c3289c97c20ca4849"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_wikipedia-v1-res.json",
+      "bytes": 186,
+      "sha256": "dc2cac1347b106eb8aba7ca67c64a4118ed27dfb6a6e2174b4f99651555abdfb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_youtubesubtitles-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "f549bb809b80b8c95f8e18a5322507d903788e3291df6a15a1b6ea2c68d11b99"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_youtubesubtitles-v0-res.json",
+      "bytes": 200,
+      "sha256": "dd5c5f82363a62e944052a0651783ec9fde3ea3f6c7136ccb503857c458e02a7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_youtubesubtitles-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "f549bb809b80b8c95f8e18a5322507d903788e3291df6a15a1b6ea2c68d11b99"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pile_youtubesubtitles-v1-res.json",
+      "bytes": 200,
+      "sha256": "8471d7c42f394be202db491b3f26dfc9effca6d61645bd56054d42aa888bad7b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/piqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "6b1ab69429b844ce17a85905791d052d0b1f7a961a4126f8ee0fb3d9b1d3fdcf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/piqa-v0-res.json",
+      "bytes": 182,
+      "sha256": "270abbab012c5a13ebf68599100bfa05439cfdd3752adce2906a966c867096ad"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/prost-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "fd172d55c15bb8360274222e833bde807b56cf0d7e75984e23179288e057505a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/prost-v0-res.json",
+      "bytes": 186,
+      "sha256": "ca80a6795ad4233d48e1024db80d16e888896da8af457e0d8f037217737ba5ab"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pubmedqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "10367bb35ac82a90226c2991a365cb9a405406a058697b34f2da3fa5f1f6e9e7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/pubmedqa-v0-res.json",
+      "bytes": 105,
+      "sha256": "f557be10e057f7eafd4cd53bb0680221d415b551644e4c4204bf751af7b32f87"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2011-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "c3c79b859aa8251868817f6fdab3950bbe7334ef8c5b4b3d18cbbd333ed8a8ba"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2011-v0-res.json",
+      "bytes": 183,
+      "sha256": "4972bc243e9d3524a29aaea452117cbf30d3afb28b17382a52196fe3113a84be"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2012-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "b0b5e17c776bf76561e88b9238e5ec85caccb4f1048544016294096abb4d44e6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2012-v0-res.json",
+      "bytes": 175,
+      "sha256": "23333568bad694fcc069f3a389e46471928bce2b9359e9174e0826ec910ab7ef"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2013-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9fab69172fdeedf72e79b36e8dd8bca94ff3756883dbd5d1a5cc87743b7941f5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qa4mre_2013-v0-res.json",
+      "bytes": 199,
+      "sha256": "55c09531943e2d81b4e081d547bc1c8dd03a126b51602d5fe86812599863f799"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qnli-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "f80b29c84b2f5f1c17987967b3fc2e209b3e57171dd18aba98660d5052ac8d91"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qnli-v0-res.json",
+      "bytes": 110,
+      "sha256": "f9ab909a625c42bf5ed03b596364b6063da074be8bfa97e74f1f8fed828f009c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qqp-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9902d010074f1341c5cac4b0c50259bb8a38462fbda01623756a2b5d0864c6e0"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/qqp-v0-res.json",
+      "bytes": 173,
+      "sha256": "9108a75cc4678fae3b9ceaf6c86762287a2a23ca78b5e198df11a4a07fdd3765"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/race-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "770f83b6433ed23b6e4ce698da3904443a747a10482d06e2b4f27ac84f3716fa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/race-v0-res.json",
+      "bytes": 112,
+      "sha256": "8e95837012cdc57f3d7b6070349104469f14e9e3800689f2a812c4bcb6864c39"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/random_insertion-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "1f620e00eb82325497d860c35e367746cbf2cff1df3b460066caf9dd9519c995"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/random_insertion-v0-res.json",
+      "bytes": 103,
+      "sha256": "831e78a9bd582bd82ff8cc455c443fa343924780a1dfd50d3e2b7129d4baee7f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/record-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9378161122b714969b666454a00f14667002d1d854acdebb81d6f5ae8cc3f011"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/record-v0-res.json",
+      "bytes": 164,
+      "sha256": "2641e264e10bd29967939d83dbb4978958ad74ff728b39dcdc0cf9a6b9816e96"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/reversed_words-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "b7139bdb90bd45e5a6f1e0a5f08f64e8061cb591ac6f77ee419188de897db71e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/reversed_words-v0-res.json",
+      "bytes": 99,
+      "sha256": "539bbb9c6627bdf845ff678423d2415e8dd404ecb2aa1674d48895a1d197eafb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/rte-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1d0558c7fbafe6b9a4b4e7998c5a95225e10352325addb38cc73e2fac152a280"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/rte-v0-res.json",
+      "bytes": 109,
+      "sha256": "5972ed760e1221bb86a30869a73a36ec96153e4c70f64cb08cefc05959330e4a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/sciq-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "0a4a19d63486ad0d8f9bd5eddd57341e689ee6453e0990905c084194e8627af2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/sciq-v0-res.json",
+      "bytes": 156,
+      "sha256": "bb62eff149a4f6f27dce5a102d7fc25903046962966aeb4a64514e95427019f7"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "99ffda18b6e3bc4a7f7afe07c2151bbb67b496f8297353fac3994cd12eabc475"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "7e15432544c888b3bd0081dd9df20dfb6d5629d3e9e0456c83de5d4dc1655ec2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v0-res.json",
+      "bytes": 216,
+      "sha256": "1957ce0bf5704afb62e66b83df8fb86b7d32b8fa34b4abf049cab13a77624488"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "3e2a203dad9f845a96ba1ec525f77ab5d919e93859587e70da7aa5eb473a5388"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "0d15e5fb3f0dd333d0d8d67101a5772a5ccb5d29b6a09a030064dc9485865041"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/squad2-v1-res.json",
+      "bytes": 216,
+      "sha256": "90d68f110f8b2b2c42e171ab787e739b21472efaf916b3e9ab492b9245042db8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/sst-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "31268bfba6b089a15cfd396b87ec34a592d97eb28b6fc4ec2ae8962ef7fcfbd6"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/sst-v0-res.json",
+      "bytes": 109,
+      "sha256": "5376470c6db2a8c44e56fb1143001ca841ff1fe328605dabf3a1c3d26b39f282"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/swag-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "421d65084097887acc65bf1935ca917de823c1a88b300889ccac4b5dc9519258"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/swag-v0-res.json",
+      "bytes": 184,
+      "sha256": "281af614f8052ebb28382c8cd31b8a514b8f66645bab9742d7c08456f1c1b444"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/toxigen-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "d705ffdc99efe4a358bf0ea0ee0a4980805e7292bddfda14a9f732deaba5a659"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/toxigen-v0-res.json",
+      "bytes": 191,
+      "sha256": "6e4ce7e370970c667ca0e7410858dee2f27ec00e448a2448b310d8d7a7fd0aa9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/triviaqa-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "4beecddd1012560fe80017534025c9c04ffcbb435659af78bb62fb6850b84e05"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/triviaqa-v0-res.json",
+      "bytes": 87,
+      "sha256": "cf0b8517d31a69c52aadb0020e8e915b1fc0afcf724142266246f5866aa0df49"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/triviaqa-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "4beecddd1012560fe80017534025c9c04ffcbb435659af78bb62fb6850b84e05"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/triviaqa-v1-res.json",
+      "bytes": 87,
+      "sha256": "0cdea365693e4dce475a3a2af3d3fbabdbac238b9300681035bfcc4584268dbe"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_gen-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "f2eab28be9ec4cf341fe707ad768ef9110b0cbf8ca07f0399f20c49aac505cd4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_gen-v0-res.json",
+      "bytes": 839,
+      "sha256": "a6f0411540279cdba1fe8b7082a40bc0b99d33d3dde38b1ad5491536f77d8317"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_gen-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "62fd1699f9cf816c204f5115c186d0c8fb4b33484d12cf7f52526d7b619e8c16"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_gen-v1-res.json",
+      "bytes": 839,
+      "sha256": "a0adb85a21ceca032eb8a8a3bfe6781efd4da19616b61a93aeef23905f94e21c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_mc-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "14c68512baa5cba80c6fa9ed978cea7aa0f300ee5be00714278e8bb68b3567ed"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_mc-v0-res.json",
+      "bytes": 191,
+      "sha256": "4201b80688191e7e040e2ca9b91758261b19b9aeb701987d7c018f4534dd9876"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_mc-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "3e33c9b778ddfb9135bf6c63abcaaabb3ffb221dc2118d7af2d77d9522ad8180"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/truthfulqa_mc-v1-res.json",
+      "bytes": 192,
+      "sha256": "86096e0963509fda3c675515336133a921160f7086c6c6036304c7919fab527f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/webqs-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "160e3713cf4a81c80f7fc25e29929695318da080d92212c952d6ad4644271127"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/webqs-v0-res.json",
+      "bytes": 81,
+      "sha256": "7d9beed1d693cf9004b2f06085f3f696ba4fc2df209b4f67b0a75fb3fb406013"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wic-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "4e66d4aba5179d512da3821607f892fb2bc90756401178d75b6379417fb5bc70"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wic-v0-res.json",
+      "bytes": 109,
+      "sha256": "f25f7645fbefb703bde0e2eed9bddfde9413cd39dd9aa9f2bbc549b99c6deefd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wikitext-v0-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "994dd8fc7402ab176ea5ae80931892dd4247097117d3dd2e4d38511e91cd02a9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wikitext-v0-res.json",
+      "bytes": 173,
+      "sha256": "ae07b8e6030a7fe636838c2f794334c6eee58a6e28e11ad80af9d4d7338ef4c4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wikitext-v1-loglikelihood_rolling",
+      "bytes": 64,
+      "sha256": "994dd8fc7402ab176ea5ae80931892dd4247097117d3dd2e4d38511e91cd02a9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wikitext-v1-res.json",
+      "bytes": 173,
+      "sha256": "91d76c9175d544e65a95aa2c6215bdfedc4df5f85a10165b15a3e29438afb093"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wikitext_10_hf_pretrained-EleutherAI-pythia-14m-dtype-float32-device-cpu.txt",
+      "bytes": 373,
+      "sha256": "8c472008f312d227df40d4f79f0ebe0961e3f418a6e4df50afee2a8dfe299439"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/winogrande-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "5c89f37a72b7da82ed16d0afff1b23810f9fc8fa39401fdd8bcab2cb51c96d29"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/winogrande-v0-res.json",
+      "bytes": 122,
+      "sha256": "2214249a414a7df7dbfe6121d1c8bca1155f4324cbc1ee4885c420e239da1f61"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt14-en-fr-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "4ec62ad9d5fb46273f322e1b91a3aef017a8d78e2bf91bca4830ef8aa9ca6871"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt14-en-fr-v0-res.json",
+      "bytes": 194,
+      "sha256": "2579099d3e6cbdb8ba9e6166c092e1258f7f94d110c565720c28a3d3b41d9bbf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt14-fr-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "cc3ddf5a245d13f71ddce9814b8fb0094243942ccdd462f3d510833fca234582"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt14-fr-en-v0-res.json",
+      "bytes": 192,
+      "sha256": "9f8b4beb936821234bd5dc619240dc5361886f5be4b2f419819bd9c106d160c5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-de-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "10d4334a1d5824baa53adde395183cdb539082c70531ab485e3a195a64dcee1b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-de-en-v0-res.json",
+      "bytes": 195,
+      "sha256": "ad909c8acc0a9b72ec997ecc4bc6715fa328d07c5ad8c3d4167801f571b70253"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-en-de-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "f31d29f0c79cc28bc11f1815a7fffda584bbaac4c5c03db79a888a660e6b63cf"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-en-de-v0-res.json",
+      "bytes": 193,
+      "sha256": "1df10dba4afd113897cf1a6eb0dd4881bbbb2fcfa1c409f5a9d4f85f945ccad5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-en-ro-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "125dd2b474acd48da1c8f39fd913c8bba80e0c21df4a587e2223fb9b5665cd21"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-en-ro-v0-res.json",
+      "bytes": 194,
+      "sha256": "59ad3373d955e07195743592d64671246167e4cdfc9d00e83619048e99bf861c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-ro-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "d548ca80b047d86020338911a477f4b68b428744b7e7e36a5c8cf4f691b5dbc1"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt16-ro-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "159cea031d8db3083cdad38c9c896dc9d983906158fbdc7e2f44b8bb02b2b093"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-cs-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "1b08ea76848b69db9ea18279c0bb07adb67858de9c14f3619ebe4149c5c7a4b4"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-cs-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "47bf5bb9388de007f94166568423ed470284d7b98518214f40add06417f65413"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-de-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "d92790392dfe5b3c30f408c3622ee0532de629a27e30057dd9d39f597447efaa"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-de-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "5739c87ee1cee877183090e6f3320eab5b6856673bee1ecb7df0e66ffd452c81"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-de-fr-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "dfa3c4c6caee4b217bb6eab1259edc98801e0b8b4859015245b66b9aec3ba278"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-de-fr-v0-res.json",
+      "bytes": 195,
+      "sha256": "84e1bc58b7fa18e7f650fda7e8c0f13193f57b0289539435d76b5dd48de9cb23"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-cs-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "831b2b0e8c26ec61c314e7c66f3d56f32b9659830ac6b1eedc15819d43d534dd"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-cs-v0-res.json",
+      "bytes": 194,
+      "sha256": "12dc0c51c0315fb37e0ac42f5bc487fd6c727817c00b4450b725b4bb269d3fe5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-de-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "e71e01053a2fc656a3c8dab7cd550c40056d780bbf2869bbd03465f258427cf9"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-de-v0-res.json",
+      "bytes": 194,
+      "sha256": "5ab63dec9ac78c04ea1942df61741091f10a2d4d73f767337af579f16cd03428"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-iu-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "a91886c4bc4bfb02729d2039ad45ba8f7b1c3f3a8bc76b4aca51b6abfa18f55e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-iu-v0-res.json",
+      "bytes": 196,
+      "sha256": "66204b8b01cb815c911977c71a66cc00fc864510ae75667d2d4922452068d827"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ja-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "66c9b3a771746857e7e661b28cbdece061c91053eb771048890ededf46f6887a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ja-v0-res.json",
+      "bytes": 197,
+      "sha256": "d072e7278ca6da67e2197c2ee2066fa4dfbf36c4f0829d299bd6289a65e19135"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ja-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "66c9b3a771746857e7e661b28cbdece061c91053eb771048890ededf46f6887a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ja-v1-res.json",
+      "bytes": 197,
+      "sha256": "f8d888f60aff5266b06d8e67427d76c27e8b82cc78a2dd8b1208fb8b95de77c8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-km-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "bb2baae24b2b5d7bdfcabc8e2bec99e2cbb517a26130be2553744beca3f35003"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-km-v0-res.json",
+      "bytes": 196,
+      "sha256": "36436dae198896cd99d5929e62917558b5774902092eb423ca4548ea458852ed"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-pl-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "23090ee5efdb1e1dce8ddbeb65590859e72fa526504e8cdd0add47913f81ed6b"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-pl-v0-res.json",
+      "bytes": 195,
+      "sha256": "9b46ccc0fab746f23263578106270289159934111b63bcbe1c320812b148cf3c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ps-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "aab2d463db4acb8170ea9548ae33b18a8a2144be925497ade4bdafd4b0bc4ce2"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ps-v0-res.json",
+      "bytes": 196,
+      "sha256": "145032e1c42272679708c436bc091d023725bf70a1f8def9e888eac363041f7e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ru-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "12872ba96a14c444d806aac710636ee9188a509508dd0bff281dc3de13ae3962"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ru-v0-res.json",
+      "bytes": 194,
+      "sha256": "eb6457f9d923c77c9339abad9f95889b9cae99460abbf653825ce0aa39c21c23"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ta-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "2438de4a526d1574ec2fcdbf9262f26945485b5ac9485bd297f891b516ee1c6f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-ta-v0-res.json",
+      "bytes": 159,
+      "sha256": "0b08c0291ab3389cd1c08f621bb80a377e25e1fb3d18c741aac2e8a83827857a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-zh-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "652912034465dbe2d6dea31a69dbb27eb5fa7ef05759293cfbfd0379dcadcbd5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-zh-v0-res.json",
+      "bytes": 196,
+      "sha256": "35f51640bab2ef60f7ae9386d7520c5c18094f9d8dbabf245d810758f14b3b5a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-zh-v1-greedy_until",
+      "bytes": 64,
+      "sha256": "652912034465dbe2d6dea31a69dbb27eb5fa7ef05759293cfbfd0379dcadcbd5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-en-zh-v1-res.json",
+      "bytes": 196,
+      "sha256": "03031eff2e89e855564d542afba5af4fc16af2f58c2fb20066cb9b3af5f5f34e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-fr-de-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "b85d4546af79a18ba72b8f56cac52f1676e2b15d0963c2cadc4b2ac4d15fe446"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-fr-de-v0-res.json",
+      "bytes": 194,
+      "sha256": "7547765e0b9fbec4c1a2b331c1425c2487b4c85817a6a42880ff48662b56e4e5"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-iu-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "cf4eb36dc6e8f11e619822e4183dc28e74f9ae5245b6a9d83aebc7868cbab6cb"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-iu-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "8625206033182ecbb8da71e982137aea4850c548a161013f7f1f258cded231a8"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ja-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "6c930cf8f38fee477ced0e9c884067c6a03f6527a0c5d1e899b6d10b3ebe5a7d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ja-en-v0-res.json",
+      "bytes": 195,
+      "sha256": "b586ae0b4b2823b465c1cfd3be4247628de0f4323e62680bf681143f4075716f"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-km-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "97afbf5b65f0e13be93b6a4b470c60a0a5dcf830c4809b0c0a6bae23ca826116"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-km-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "726b560f5072149593fff7538280c48a18e6743f8530585eee06b1149e2f4d61"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-pl-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "9d0c7e1a445d0dd229dc24230f8cf23dddfb069f3b4a427b84461f52b93f0889"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-pl-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "6a13013825174e5b878ebbf963dc78b0871c46bc38e5775cf57088993f8e0b52"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ps-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "0603d202ce8dc56dca6bbbd17eca48d92b9d9ec7f88c9c705d80db11993c13de"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ps-en-v0-res.json",
+      "bytes": 195,
+      "sha256": "4d62ad2ff3cc4428704c3eac1af3fd8fed72339b228eeb8d791d4e0bfd60019a"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ru-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "ee7dcb39d24b9c67e3345bac03ccae4ac92b2f6505d6ae16a153dcd1d5e70c0c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ru-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "211828311cd54be7fd6dd85c3a10c13a758d5a47abdd6f94c6f32df65f96687c"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ta-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "0965959aa85e7071df2b281d009b52807985db83c2e91f04f4c38bb9d55e1c26"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-ta-en-v0-res.json",
+      "bytes": 195,
+      "sha256": "e54a12299a9dffe2e27130256f5132b61316fcfa0f776a3500066d165fd0ef9d"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-zh-en-v0-greedy_until",
+      "bytes": 64,
+      "sha256": "132a4825d630a1dd57804d05386830d13a2481ba55d8b49fce28d8cab8fdc1bc"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wmt20-zh-en-v0-res.json",
+      "bytes": 194,
+      "sha256": "a5229d0ec46be48d5b3ac0b2a6e53c8c671b66aa34d55cac171d232517d6e247"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wnli-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "1946bb361d073288621287502594f6bea546f662aea9e2de9871b70882e2ce70"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wnli-v0-res.json",
+      "bytes": 110,
+      "sha256": "3754eb9dea8d1bf38e93085764ae8506f7f76747532c42b78a8f0f8223ef4e8e"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wnli-v1-loglikelihood",
+      "bytes": 64,
+      "sha256": "60d0774b63f7fae7766aee18ee6da84b7473e0391a5e2390a95bc74dfad39fd3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wnli-v1-res.json",
+      "bytes": 109,
+      "sha256": "32978d41250c90d4c54313d589a47adc0b5d58d15d22240ec5e2088bf64329db"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wsc-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "ef7c8671fa7cd9419cffbd5b23d62c4a80f518853be4af06b2137069d42d98f3"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wsc-v0-res.json",
+      "bytes": 109,
+      "sha256": "5a58d3b57d6b98284626a7eca450e33622fb59ecf481227f78382d8ce92198da"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wsc273-v0-loglikelihood",
+      "bytes": 64,
+      "sha256": "9073dea3d82eb7d332605d5a39e05057ae4a5899a6a4d7e78d280bc5871f3a35"
+    },
+    {
+      "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testdata/wsc273-v0-res.json",
+      "bytes": 113,
+      "sha256": "1439517b62c1f8ef2f708b057ca6c75cb18fd0305686cb535ca2710bb6e465ba"
     },
     {
       "path": "paper_benchmarks/00_shared/lm-evaluation-harness/tests/testyamls/test-01.yaml",
@@ -73345,6 +76973,16 @@
       "sha256": "c24f176fcc8651f22e4c8fb238ec820fca46b4cbb02c5f2cb71146e3d6cdf21b"
     },
     {
+      "path": "paper_benchmarks/08_eq-bench/data/translate_openai.py",
+      "bytes": 8482,
+      "sha256": "719a117eabe58144eec89c0745c580c0aa463b35002b06625a3202b73dce81be"
+    },
+    {
+      "path": "paper_benchmarks/08_eq-bench/data/translate_wmt.py",
+      "bytes": 3476,
+      "sha256": "6c3a4740a0f78f42eda41666d3347ddf5d1cda18d48a43e7e2246f6b32e079f8"
+    },
+    {
       "path": "paper_benchmarks/08_eq-bench/deepseek-v2-lite-16b/config/config_2_4_sparse.cfg",
       "bytes": 521,
       "sha256": "c7ad7f504705966352bfbaccab190287e7f7be448fc4b80ffce305c6f535f093"
@@ -74206,8 +77844,8 @@
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/llama3.1-8b/get_response_vllm.py",
-      "bytes": 6765,
-      "sha256": "1bfb47c21dc4bca89a12d2e1c0c9489a8607f2983a5b780b08444552d0f40429"
+      "bytes": 6743,
+      "sha256": "53f9583e6485c3a1b79ec1d5446bc57cf591c9a911304bc293303c7f5c310ce9"
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/llama3.1-8b/run_2_4_sparse.sh",
@@ -74246,8 +77884,8 @@
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/llama3.1-8b/transform_format_vllm.py",
-      "bytes": 1796,
-      "sha256": "a6b0827401ba8de34909d19270e4d649d3bc96aa11d506b6de5511bac7d793cd"
+      "bytes": 1774,
+      "sha256": "a14f2d7bc1ac01f67528dbc5a22a3ae5d1db40f5b9edc0c226860a4710e3a82d"
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/llama70B/compute_score_vllm.py",
@@ -74431,8 +78069,8 @@
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/qwen2.5-7b/get_response_vllm.py",
-      "bytes": 6746,
-      "sha256": "0ef7186b7f8bcb8a6fcb2216336c4e6cc0845519131234ab454996026654574b"
+      "bytes": 6724,
+      "sha256": "1936482618f1f9cddcd5eab466c8c19a3cd63f1400c8a0a225862a3d89be8c7b"
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/qwen2.5-7b/run_2_4_sparse.sh",
@@ -74476,8 +78114,8 @@
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/qwen2.5-7b/transform_format_vllm.py",
-      "bytes": 1811,
-      "sha256": "ccf46270fc017bd37386cb2c9a3a3a91369f364228d55e125f4106c1dcbdcc4d"
+      "bytes": 1789,
+      "sha256": "6dbb84ce9cc2cf0986ad5ab4a7001efa6a4840c71c4146623bed66cbae80d3af"
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/requirements.txt",
@@ -74496,61 +78134,6 @@
     },
     {
       "path": "paper_benchmarks/09_CharacterEval/transform_format.py",
-      "bytes": 788,
-      "sha256": "c6cfe4a42338147878cc37359d34e80b851bafd0521b6b85bc171090977c8b2c"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/LICENSE",
-      "bytes": 1064,
-      "sha256": "0ed05348cea505bed2e23dd9b2f99b81b36148422071e2793ae2076ac4834e9b"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/README.md",
-      "bytes": 3345,
-      "sha256": "46381530882dec2ef7abbb49d4860c6db5c52a04b2255ec74ab2db1f32902f4f"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/assets/0.txt",
-      "bytes": 1,
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/assets/dimension.png",
-      "bytes": 342390,
-      "sha256": "8347704bffd914aed1b7cde55774f47d38e830ba0c6425ac9172013bb78c5b38"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/assets/example.png",
-      "bytes": 570393,
-      "sha256": "b4baaf0e6a2eb209bc2d18377de944fa93c075b34fae2ed4cd28330f4a838b4a"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/assets/leaderboard.png",
-      "bytes": 887572,
-      "sha256": "d6f1628c81a62bb442dfd96ba774783518a50d30e9a6f1d0addd5b345e368590"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/compute_score.py",
-      "bytes": 395,
-      "sha256": "cfcf291f85ee759c114aa583b76934a35e71799f4c5b06eef0ab7a28b0d031c0"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/get_response.py",
-      "bytes": 2498,
-      "sha256": "ac5030abbefc5d9979e65a2d5f47490cfac5c7ca5195c7737124ae78fed7a9e5"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/requirements.txt",
-      "bytes": 33,
-      "sha256": "bcd36bff253fe869207ea46d8c60a326d9371cf5f54b97772bab06d3da0e3a18"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/run_char_rm.py",
-      "bytes": 1494,
-      "sha256": "85bc7ebdf6f283dc563fe7bfb8b98cdf7799b9cbb5a9c443b78f3e0c742180be"
-    },
-    {
-      "path": "paper_benchmarks/09_CharacterEval/upstream_official/transform_format.py",
       "bytes": 788,
       "sha256": "c6cfe4a42338147878cc37359d34e80b851bafd0521b6b85bc171090977c8b2c"
     },
@@ -74651,8 +78234,8 @@
     },
     {
       "path": "paper_benchmarks/10_PsychoBench/llama3.1-8b/llama31_8b_vllm_generator.py",
-      "bytes": 12551,
-      "sha256": "5cafd01a54b03e27a727017e27ccab8970d6aaf6ca674806f9d4b4fe5fe7ef21"
+      "bytes": 12553,
+      "sha256": "377cad67d1bab8e5ce04133998df18f960e61cafeab4d242606dfd9cddaff878"
     },
     {
       "path": "paper_benchmarks/10_PsychoBench/llama3.1-8b/run_2_4_sparse.sh",
@@ -74861,8 +78444,8 @@
     },
     {
       "path": "paper_benchmarks/10_PsychoBench/qwen2.5-7b/qwen25_7b_vllm_generator.py",
-      "bytes": 13776,
-      "sha256": "8cb513f5016662f0341590f1bceb8cce3a0f5909d8bd04c4183fe0b984e63e41"
+      "bytes": 13778,
+      "sha256": "73cca60765c2a2e444f64dd01ef16ac3cc2e12fa1bc824027cb31d43346d55f1"
     },
     {
       "path": "paper_benchmarks/10_PsychoBench/qwen2.5-7b/run_2_4_sparse.sh",
@@ -74911,8 +78494,8 @@
     },
     {
       "path": "paper_benchmarks/README.md",
-      "bytes": 1378,
-      "sha256": "ce7dc321e6edfcb675a743cf228eaa7cfe368af1200c32ce1963e29f3e20b40a"
+      "bytes": 1351,
+      "sha256": "c6b0392221a143575652af951f536a5e9be12f9bc0096f2f2e280a583c2b08f1"
     },
     {
       "path": "requirements.txt",
@@ -74943,6 +78526,11 @@
       "path": "results/processed/Psychobench_16P.csv",
       "bytes": 4722,
       "sha256": "cbaa40d176ebb6e295c89c4ca9824c3f5405ca7d86199f11b90e8cbe20f743dc"
+    },
+    {
+      "path": "results/processed/README.md",
+      "bytes": 1676,
+      "sha256": "e0d36d81b39c992cc6cb9b416fecade33a62c22f94f3e9f55d0843e2e38100e0"
     },
     {
       "path": "results/processed/ToM-Bench_ability.csv",
@@ -74986,8 +78574,8 @@
     },
     {
       "path": "scripts/prepare_results/README.md",
-      "bytes": 734,
-      "sha256": "732aea6253f1ee1ea787aaf2b71e5b13ea96988d76d719eb9bfd7ead51e90f0e"
+      "bytes": 906,
+      "sha256": "1fda3dc12950e63a4a84fa0be2d18b0f6ea1ae41a6402f0825cf70998a7de984"
     },
     {
       "path": "scripts/prepare_results/check_processed_results.py",
@@ -74995,59 +78583,69 @@
       "sha256": "06562e7ac46d47336d4d780b169c368d17edbc9aee5014285d47e170f584f570"
     },
     {
+      "path": "scripts/prepare_results/check_source_layout.py",
+      "bytes": 5994,
+      "sha256": "2e85bff8adc711945894972c6303deee2e1a090daa7883e17788b9027cd83966"
+    },
+    {
+      "path": "scripts/prepare_results/original_result_hashes.json",
+      "bytes": 1366,
+      "sha256": "e58940d35754a406c7545ac74bdb1e84504f75de4b562181f73014814800aa96"
+    },
+    {
       "path": "scripts/prepare_results/validate_release.py",
-      "bytes": 3665,
-      "sha256": "60a49e35ead8e68fe680a72006e0475dbb7476f18d78e34245bb2572760efa4d"
+      "bytes": 4102,
+      "sha256": "bd65119eaf9cfb4b578f4a8c267981844ade3c34b072eae0f9b82b25c89a657a"
     },
     {
       "path": "scripts/report_sync/README.md",
-      "bytes": 1876,
-      "sha256": "9505bc2babbbf46e196f71ac0d5b67c9cd987a5fcce65f51d47c3dae2a65fceb"
+      "bytes": 1945,
+      "sha256": "5ac3d115fc6e4e2c13cd155053c81298294729c898346d1e7113e79140ff43dd"
     },
     {
       "path": "scripts/report_sync/fix_tombench_result_language_fields.py",
       "bytes": 2219,
-      "sha256": "1edf863a33868e1b1c0d72feef762003383d1dc4933e6bc109d86f3d920bc62d"
+      "sha256": "287a6cc393f9db71ff61e01ba5ca47f90993d6c5aacbed249f864d020f4a6b2d"
     },
     {
       "path": "scripts/report_sync/repair_psychobench_from_responses.py",
-      "bytes": 15391,
-      "sha256": "bc4a6a41c91bbe0d6a368222190facb9ff08dd19846729b92176694ee65da865"
+      "bytes": 15344,
+      "sha256": "cd8a53b1cd7ef2f953153d43594dc0a7ba9f88687dec5942d369f0dea2a9bdf7"
     },
     {
       "path": "scripts/report_sync/rerun_psychobench_queue.py",
-      "bytes": 34424,
-      "sha256": "8caa481e8f48481c97e1d08559365dc53b016c5389d3c922fbc22756bd1412f6"
+      "bytes": 34387,
+      "sha256": "d19cc6364df00c3087d6f81d97716c2b6c6b0388fb37d6962072d9a49aa5f58c"
     },
     {
       "path": "scripts/report_sync/sync_charactereval_reports.py",
-      "bytes": 5079,
-      "sha256": "63ee661e238934818ecdcd7109383d5533ce8aedcf29c482489fd720ce5b7992"
+      "bytes": 5032,
+      "sha256": "2fff8e6f1ddd7e9e5c6677f737c843c56d734b3ed4f9463f49ec84aa1ab53b09"
     },
     {
       "path": "scripts/report_sync/sync_eq_tom_reports.py",
-      "bytes": 36135,
-      "sha256": "8fd595d572b1f3f28591854f94fdf0ab3fede78580070110bc9a4d5cb7e4772b"
+      "bytes": 36088,
+      "sha256": "5599ac53970b9e9f96687dbabe9a6dd71fa7bbc0b16be8c42975120e8344b0f7"
     },
     {
       "path": "scripts/report_sync/sync_gsm8k_reports.py",
-      "bytes": 6772,
-      "sha256": "3cc514034ed25bc67cea4ac8b75e9ea88265e6487d6d932d5cc88dcccb330350"
+      "bytes": 7099,
+      "sha256": "26f58af12666e81face3a8fbec780e0ee17bf4e1bdb05ca079376d6e4d1cedf6"
     },
     {
       "path": "scripts/report_sync/sync_numeric_reports.py",
-      "bytes": 14909,
-      "sha256": "f60880d4fc2108d1c4b587cfe3c20e7233ec6c6a15b1330b106cdd14892c06d0"
+      "bytes": 15286,
+      "sha256": "58f68d3929e734e215a6f0c425806380bd90cd5c56d0419f510033ea7e028810"
     },
     {
       "path": "scripts/report_sync/sync_psychobench_reports.py",
-      "bytes": 13188,
-      "sha256": "ba37e55e8ed3b0b4d2b22dd896adcb3d69ac2341384a7572f3708890ac36d9a4"
+      "bytes": 13141,
+      "sha256": "c13e673d3e3f2b11c29f804860890c5c37e0e16ac058bbf935dc0e2aa5810c24"
     },
     {
       "path": "scripts/report_sync/validate_psychobench_summary.py",
-      "bytes": 9104,
-      "sha256": "39e1ec1245d9e425b4bc3baff04a68c27cb01c72bd0189603ae7cd1b7091ec5b"
+      "bytes": 9057,
+      "sha256": "f6f4d5b8831db6a1b5e2e6866f6bd77213f2b55b58484dcd7a3f64e48060a8d0"
     },
     {
       "path": "serving/DeepSeek-V2-Lite-Chat-16B/start_vllm_2_4_sparse.sh",
@@ -75280,9 +78878,14 @@
       "sha256": "b25260f8a09841e23d02fd7d4e33ed2a303281e4bc3cdd531bf26c1688afad19"
     },
     {
+      "path": "tables/README.md",
+      "bytes": 103,
+      "sha256": "d2e6092fe4d14c99b6d5774c44ed4a54e2aa2600469648600f22242f5c2636d2"
+    },
+    {
       "path": "tests/test_release.py",
-      "bytes": 2809,
-      "sha256": "317685c42e4ae9df7a3dabee7b27ad939afeeb7bce839812693fa61fd305cac4"
+      "bytes": 7949,
+      "sha256": "e5ca1b179fd41a69d429291437eb3f1a8e9220de2883ab558117d1f7eebbe05a"
     }
   ]
 }

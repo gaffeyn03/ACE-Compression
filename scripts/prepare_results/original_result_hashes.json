@@ -1,0 +1,19 @@
+{
+  "source": "original anonymous ACE-Compression-DBDE release",
+  "anonymous_zip_sha256": "e56949943d148aa48768dcd803611cf20b19a281e01118a64499710da6212eb0",
+  "csv_sha256": {
+    "C-eval.csv": "0570353b1b22a7ada196f7e3e95390c105636a99fb0df42c5a6cc9c4791359ab",
+    "CharacterEval.csv": "f2aca81a1b97240901bb987f096d474035ca69815abcf1dc5dcbfc459982ea56",
+    "IFEval.csv": "da362dc9fcfe569820137b116ccff552af191486ba5ca9efce5e6a51a6f4e8ee",
+    "Psychobench.csv": "2d7563f33c8bbb0aa740f556e97393bd52bcac38a438b510038e2eb69de725bf",
+    "Psychobench_16P.csv": "cbaa40d176ebb6e295c89c4ca9824c3f5405ca7d86199f11b90e8cbe20f743dc",
+    "ToM-Bench_ability.csv": "87db923b2097e2c518339b42ca628fad1b8940dd5ca16de4fe8730fcc3f93325",
+    "ToM-Bench_subability.csv": "b9e936cad626c3815b0eaff5541125905dc2e0a9a8415f61e4b6cec6169d08fc",
+    "ToM-Bench_task.csv": "4d0f8e5e1e6b1f2c62407d91516c1d3ffd7750fe86f1569dc8cecd559ff64fdb",
+    "TruthfulQA.csv": "a6a95feee5d681da3a9bb0cc7138dfb051d4f5a0152479b4fbc22dbf55ebfba1",
+    "eq-bench.csv": "211566c7300feaa8730b0ec99c39327488a0933046b469ea4008d53a014de0bf",
+    "gsm8k.csv": "28188d46ae164417274975846abeec8958c30de66f3b2e0558e8a1aa938f5f62",
+    "human-eval.csv": "fb091b49c68a8f4ebbe508ec3a47603504e1a5b011badca78c1feb446b92fb6a",
+    "role-eval.csv": "b51e9c42eb15169765fff3fef735999a7f5b8330edd3e658c6ee32120eee6b33"
+  }
+}

@@ -9,8 +9,8 @@ from dataclasses import dataclass
 from pathlib import Path
 
 
-ROOT = next(p for p in Path(__file__).resolve().parents if (p / "paper_benchmarks").is_dir())
-DEFAULT_SUMMARY = ROOT / "results/generated" / "Psychobench.csv"
+ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_SUMMARY = ROOT / "results" / "generated" / "Psychobench.csv"
 DEFAULT_QUESTIONNAIRES = ROOT / "paper_benchmarks" / "10_PsychoBench" / "questionnaires.json"
 RANGE_PATTERN = re.compile(r"from\s+(-?\d+)\s+to\s+(-?\d+)", re.IGNORECASE)
 MEAN_PATTERN = re.compile(r"^\s*(-?\d+(?:\.\d+)?)")

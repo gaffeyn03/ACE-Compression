@@ -25,4 +25,4 @@ CharacterEval | benchmark | https://github.com/morecry/CharacterEval | not logge
 PsychoBench | benchmark | https://github.com/CUHK-ARISE/PsychoBench | not logged | GPL-3.0 | psychometric profile / persona evaluation | No original dataset redistributed; evaluation wrapper and processed results only
 lm-evaluation-harness | evaluation framework | https://github.com/EleutherAI/lm-evaluation-harness | not logged | MIT | shared evaluation harness for supported benchmarks | third-party source code included where present under original license
 
-This is the inherited asset/terms inventory, not a new independent license certification. Benchmark source/adaptations are included where present, even when the original dataset is excluded. See `THIRD_PARTY_NOTICES.md` for the bundled license locations.
+This is the inherited asset inventory, not an independent license certification. Included benchmark code, task definitions and upstream tests remain subject to their original terms. See `THIRD_PARTY_NOTICES.md` for bundled license locations.
